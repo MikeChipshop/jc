@@ -14,11 +14,7 @@
             </div>
             <div class="jc_footer-details">
                     &copy; Jo Cowen Architects Ltd. Co. No. 8754147. Vat No. 184 1989 65.
-                    <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
+                    <ul><?php wp_nav_menu( array('theme_location' => 'footer_menu' )); ?></ul>
             </div>
         </div>
         <div class="jc_footer-right">
