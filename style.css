@@ -11,13 +11,13 @@ License: Private
 /* ------------------------------------------------
  HTML5 Reset
 ------------------------------------------------ */
-html{ box-sizing: border-box;}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,
+html{ -webkit-box-sizing: border-box; box-sizing: border-box;}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,
 legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-family:inherit;font-size:100%;
 font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align: baseline}:focus{/* remember to define focus styles! */outline:0}body{background:#fff;line-height:1}ol,ul{list-style: none}
 table{/* tables still need 'cellspacing="0"' in the markup */border-collapse:separate;border-spacing:0}caption,th,td{font-weight:normal;text-align:left}blockquote:before,blockquote:after,q:before,q:after{content: ""}
 blockquote,q{quotes: "" ""}a img{border: 0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block}.clear{clear:both}.clearfix:after{content:".";visibility:hidden;display:block;height:0;
 clear:both}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}strong{font-weight:bold;}em{font-style:italic}del{text-decoration: line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-*, *:after, *:before {box-sizing:border-box;}
+*, *:after, *:before {-webkit-box-sizing:border-box;box-sizing:border-box;}
 
 
 /* ------------------------------------------------
@@ -158,7 +158,8 @@ body {
     width:100%;
     height:100%;
     display:block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .jc_grid-flex-content a {
     opacity:0;
@@ -307,6 +308,63 @@ body {
     line-height: 1.4;
 }
 
+/* ------------------------------------------------
+ Content Grid
+------------------------------------------------ */
+
+.grid {
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    margin:0px -6px;
+}
+.grid-child {
+    padding:8px;
+}
+.grid-child-content {
+    text-align:center;
+    background-color:#ff0;
+    min-height:300px;
+    padding:20px;
+}
+.grid-one .grid-child {
+    -webkit-flex-basis:100%;
+    -ms-flex-preferred-size:100%;
+    flex-basis:100%
+}
+.grid-two .grid-child {
+    -webkit-flex-basis:50%;
+    -ms-flex-preferred-size:50%;
+    flex-basis:50%
+}
+.grid-three .grid-child {
+    -webkit-flex-basis:33.333%;
+    -ms-flex-preferred-size:33.333%;
+    flex-basis:33.333%
+}
+
+.grid-two.l-s .grid-child:first-child {
+    -webkit-flex-basis:66.666%;
+    -ms-flex-preferred-size:66.666%;
+    flex-basis:66.666%;
+}
+.grid-two.l-s .grid-child:last-child {
+    -webkit-flex-basis:33.333%;
+    -ms-flex-preferred-size:33.333%;
+    flex-basis:33.333%;
+}
+
+.grid-two.s-l .grid-child:last-child {
+    -webkit-flex-basis:66.666%;
+    -ms-flex-preferred-size:66.666%;
+    flex-basis:66.666%;
+}
+.grid-two.s-l .grid-child:first-child {
+    -webkit-flex-basis:33.333%;
+    -ms-flex-preferred-size:33.333%;
+    flex-basis:33.333%;
+}
 
 
 /* ------------------------------------------------
