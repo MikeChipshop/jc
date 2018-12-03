@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <div class="jc_wrap">
+    <div class="jc_page-hero">
+        Hero Image
+    </div>
     <?php if ( have_posts() ) : ?>
         <ul class="jc_news-archive">
             <?php while ( have_posts() ) : the_post(); ?>

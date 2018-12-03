@@ -23,39 +23,31 @@ clear:both}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav
 /* ------------------------------------------------
 Fonts In Use
 
-Museo Sans 100
-
-font-family: museo-sans, sans-serif;
-
-font-weight: 100;
-
-font-style: normal;
-
-
-Museo Sans 300
-
-font-family: museo-sans, sans-serif;
-
-font-weight: 300;
-
-font-style: normal;
-
-
-Museo Sans 700
-
-font-family: museo-sans, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-
-
-
-Colours
+Museo Sans
+font-family: museo-sans, sans-serif; 100 | 300 | 500 | 700
 
 ------------------------------------------------ */
+
+/* Temp */
+
+.jc_page-hero {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 200px 0px;
+    background-color: #000;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
 
 /* ------------------------------------------------
  Global
