@@ -210,3 +210,123 @@ $classes[] = $post->post_type . '-' . $post->post_name;
 return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+/***************************************************
+/ Project Post Type
+/***************************************************/
+
+add_action( 'init', 'register_cpt_project' );
+
+function register_cpt_project() {
+
+    $labels = array(
+        'name' => _x( 'Project', 'project' ),
+        'singular_name' => _x( 'Project', 'project' ),
+        'add_new' => _x( 'Add New', 'project' ),
+        'add_new_item' => _x( 'Add New', 'project' ),
+        'edit_item' => _x( 'Edit', 'project' ),
+        'new_item' => _x( 'New', 'project' ),
+        'view_item' => _x( 'View', 'project' ),
+        'search_items' => _x( 'Search', 'project' ),
+        'not_found' => _x( 'None found', 'project' ),
+        'not_found_in_trash' => _x( 'None found in bin', 'project' ),
+        'parent_item_colon' => _x( 'Parent:', 'project' ),
+        'menu_name' => _x( 'Projects', 'project' ),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'description' => 'Post type for projects',
+        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author' ),
+        //'taxonomies' => array('category', 'post_tag'),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 20,
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+		'menu_icon' => 'dashicons-admin-multisite',
+        'capability_type' => 'post',
+        'show_in_rest' => true
+    );
+
+    register_post_type( 'project', $args );
+}
+
+/***************************************************
+/ Project Post Type
+/***************************************************/
+
+add_action( 'init', 'register_cpt_team' );
+
+function register_cpt_team() {
+
+    $labels = array(
+        'name' => _x( 'Team', 'team' ),
+        'singular_name' => _x( 'Team', 'team' ),
+        'add_new' => _x( 'Add New', 'team' ),
+        'add_new_item' => _x( 'Add New team member', 'team' ),
+        'edit_item' => _x( 'Edit team member', 'team' ),
+        'new_item' => _x( 'New', 'team' ),
+        'view_item' => _x( 'View', 'team' ),
+        'search_items' => _x( 'Search', 'team' ),
+        'not_found' => _x( 'None found', 'team' ),
+        'not_found_in_trash' => _x( 'None found in bin', 'team' ),
+        'parent_item_colon' => _x( 'Parent:', 'team' ),
+        'menu_name' => _x( 'Team', 'team' ),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'description' => 'Post type for team members ',
+        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author' ),
+        //'taxonomies' => array('category', 'post_tag'),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 20,
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+		'menu_icon' => 'dashicons-groups',
+        'capability_type' => 'post',
+        'show_in_rest' => true
+    );
+
+    register_post_type( 'team', $args );
+}
+
+/***************************************************
+/ Change "Posts" to "News"
+/***************************************************/
+function jc_change_post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'News';
+}
+add_action( 'admin_menu', 'jc_change_post_label' );
+
+/***************************************************
+/ Remove Comments Functionality
+/***************************************************/
+add_action('init', 'remove_comment_support', 100);
+
+function remove_comment_support() {
+remove_post_type_support( 'page', 'comments' );
+remove_post_type_support( 'post', 'comments' );
+}
+
+/* Remove label */
+function custom_menu_page_removing() {
+    remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'custom_menu_page_removing' );

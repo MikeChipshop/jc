@@ -32,7 +32,7 @@ if ( function_exists( 'add_image_size' ) ) add_theme_support( 'post-thumbnails' 
 /***************************************************/
 
 if ( function_exists( 'add_image_size' ) ) {
-	//add_image_size( 'home-slide', 1400, 400, false );
+	add_image_size( 'news', 630, 950, false );
 	//add_image_size( 'testimonial', 150, 150, false );
 }
 
