@@ -33,7 +33,7 @@ if ( function_exists( 'add_image_size' ) ) add_theme_support( 'post-thumbnails' 
 
 if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'news', 630, 950, false );
-	//add_image_size( 'testimonial', 150, 150, false );
+	add_image_size( 'team', 600, 400, true );
 }
 
 /****************************************************

@@ -99,7 +99,7 @@ function rd_fix_blog_tab_on_cpt($classes, $item, $args) {
 }
 add_filter('nav_menu_css_class', 'rd_fix_blog_tab_on_cpt', 10, 3);
 
-/* Include other CPT's in above */
+/* Include other CPT's in above
 
 add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
 function add_current_nav_class($classes, $item) {
@@ -116,6 +116,7 @@ function add_current_nav_class($classes, $item) {
 	return $classes;
 
 }
+*/
 
 /***************************************************
 / <p> and <br /> Fixes
@@ -184,7 +185,7 @@ if(function_exists('acf_add_options_page')) {
 
 /***************************************************
 / ADD PARENT SLUG TO BODY CLASS
-/***************************************************/
+/***************************************************
 
 add_filter('body_class','body_class_section');
 
@@ -210,6 +211,7 @@ $classes[] = $post->post_type . '-' . $post->post_name;
 return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+*/
 
 /***************************************************
 / Project Post Type
@@ -239,7 +241,7 @@ function register_cpt_project() {
         'hierarchical' => true,
         'description' => 'Post type for projects',
         'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author' ),
-        //'taxonomies' => array('category', 'post_tag'),
+        'taxonomies' => array('project-category'),
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -259,7 +261,7 @@ function register_cpt_project() {
 }
 
 /***************************************************
-/ Project Post Type
+/ Team Post Type
 /***************************************************/
 
 add_action( 'init', 'register_cpt_team' );
@@ -304,6 +306,38 @@ function register_cpt_team() {
 
     register_post_type( 'team', $args );
 }
+
+/***************************************************
+/ Project Category Taxonomy
+/***************************************************/
+
+function jc_projectcategory_taxonomy() {
+	$labels = array(
+		'name' => _x( 'Project Category', 'taxonomy general name' ),
+		'singular_name' => _x( 'Project Category', 'taxonomy singular name' ),
+		'search_items' =>  __( 'Search' ),
+		'all_items' => __( 'All Project Categories' ),
+		'parent_item' => __( 'Parent Project Category' ),
+		'parent_item_colon' => __( 'Parent Project Category:' ),
+		'edit_item' => __( 'Edit Project Category' ),
+		'update_item' => __( 'Update Project Category' ),
+		'add_new_item' => __( 'Add New Project Category' ),
+		'new_item_name' => __( 'New Project Category Name' ),
+		'menu_name' => __( 'Project Categories' ),
+	);
+
+	// Now register the taxonomy
+	register_taxonomy('project-category',array('project'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+        'show_in_nav_menus' => true,
+        'show_in_rest' => true
+	));
+}
+add_action('init', 'jc_projectcategory_taxonomy', 0);
 
 /***************************************************
 / Change "Posts" to "News"

@@ -5,7 +5,7 @@
         <div class="jc_grid-33">
             <div class="jc_grid-100">
                 <div class="cat-a jc_grid-flex-content">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/medium-image.jpg" alt="Logo">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-1.jpg" alt="Logo">
                     <a href="#">
                         <h2>Title</h2>
                     </a>
@@ -33,7 +33,7 @@
         <div class="jc_grid-66">
             <div class="jc_grid-50">
                 <div class="cat-c jc_grid-flex-content">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/shallow-image.jpg" alt="Logo">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-2.jpg" alt="Logo">
                     <a href="#">
                         <h2>Title</h2>
                     </a>
@@ -41,7 +41,7 @@
             </div>
             <div class="jc_grid-50">
                 <div class="cat-d jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/shallow-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-3.jpg" alt="Logo">
                     <a href="#">
                         <h2>Title</h2>
                     </a>
@@ -49,7 +49,7 @@
             </div>
             <div class="jc_grid-100">
                 <div class="cat-b jc_grid-flex-content">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/large-image.jpg" alt="Logo">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-4.jpg" alt="Logo">
                     <a href="#">
                         <h2>Title</h2>
                     </a>
@@ -62,7 +62,7 @@
     <div class="jc_grid-100 jc_grid-flex">
         <div class="jc_grid-33">
             <div class="cat-a jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/medium-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-5.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -70,7 +70,7 @@
         </div>
         <div class="jc_grid-33">
             <div class="cat-d jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/medium-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-6.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -86,7 +86,7 @@
             </div>
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-c jc_grid-flex-content">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/shallow-image.jpg" alt="Logo">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-7.jpg" alt="Logo">
                     <a href="#">
                         <h2>Title</h2>
                     </a>
@@ -94,7 +94,7 @@
             </div>
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-b jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/shallow-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-8.jpg" alt="Logo">
                     <a href="#">
                         <h2>Title</h2>
                     </a>
@@ -106,7 +106,7 @@
     <div class="jc_grid-100 jc_grid-flex">
         <div class="jc_grid-66">
             <div class="cat-b jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/large-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-9.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -114,7 +114,7 @@
         </div>
         <div class="jc_grid-33">
             <div class="cat-a jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/medium-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-10.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -125,7 +125,7 @@
     <div class="jc_grid-100 jc_grid-flex">
         <div class="jc_grid-33">
             <div class="cat-c jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/shallow-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-11.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -133,7 +133,7 @@
         </div>
         <div class="jc_grid-33">
             <div class="cat-d jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/shallow-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-12.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -164,7 +164,7 @@
     <div class="jc_grid-100 jc_grid-flex">
         <div class="jc_grid-33">
             <div class="cat-a jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/medium-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-13.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
@@ -172,7 +172,7 @@
         </div>
         <div class="jc_grid-66">
             <div class="cat-b jc_grid-flex-content">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/large-image.jpg" alt="Logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/fp-14.jpg" alt="Logo">
                 <a href="#">
                     <h2>Title</h2>
                 </a>
