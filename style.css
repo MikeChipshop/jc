@@ -23,8 +23,11 @@ clear:both}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav
 /* ------------------------------------------------
 Fonts In Use
 
-Museo Sans
+Museo Sans == REMOVED ==
 font-family: museo-sans, sans-serif; 100 | 300 | 500 | 700
+
+Proxima Nova
+font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 
 ------------------------------------------------ */
 
@@ -54,10 +57,10 @@ font-family: museo-sans, sans-serif; 100 | 300 | 500 | 700
 ------------------------------------------------ */
 
 body {
-    font-family: museo-sans, sans-serif;
+    font-family: proxima-nova, sans-serif;
     color:#4A4A4A;
     font-size:18px;
-    font-weight:300;
+    font-weight:400;
 }
 .jc_wrap {
     width:100%;
@@ -109,7 +112,7 @@ body {
     padding-right: 15px;
 }
 .jc_global-header nav a {
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 14px;
     color: #595358;
@@ -137,7 +140,7 @@ body {
     display:flex;
 
     color:#ffffff;
-    font-weight:bold;
+    font-weight:700;
 }
 .jc_grid-flex-content {
     width:100%;
@@ -179,7 +182,7 @@ body {
     align-items: center;
     background: rgba(27,29,59,.65);
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     text-decoration:none;
 }
 .jc_grid-flex-content:hover a {
@@ -275,7 +278,7 @@ body {
     background-color: #e6e9eb;
     padding: 20px 30px;
     color: #1b1d3b;
-    font-weight: 300;
+    font-weight: 400;
 }
 .jc_fp-text-box.link {
     background-color: #393939;

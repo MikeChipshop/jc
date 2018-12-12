@@ -3,6 +3,7 @@
 <head>
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel="stylesheet" href="https://use.typekit.net/zvy6nko.css"> -->
 <link rel="stylesheet" href="https://use.typekit.net/zvy6nko.css">
 <script defer src="<?php bloginfo('stylesheet_directory'); ?>/js/all.js"></script>
 <?php wp_head(); ?>
