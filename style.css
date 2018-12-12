@@ -34,6 +34,19 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 /* Temp */
 
 .jc_page-hero {
+
+    margin-bottom: 8px;
+    margin-top:8px;
+    color: #ffffff;
+    position:relative;
+}
+.jc_page-hero img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+.jc_hero-overlay {
+    position:absolute;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -46,12 +59,12 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 200px 0px;
-    background-color: #000;
-    margin-bottom: 8px;
-    color: #ffffff;
+    color:#ffffff;
+    background: rgba(27,30,60,.65);
+    width: 100%;
+    height: 100%;
+    top: 0px;
 }
-
 /* ------------------------------------------------
  Global
 ------------------------------------------------ */
@@ -127,6 +140,9 @@ body {
 }
 .jc_global-header li:last-child::after {
     content:none;
+}
+.jc_global-header ul.sub-menu {
+    display:none;
 }
 
 /* ------------------------------------------------
@@ -299,8 +315,13 @@ body {
     line-height:1.3;
     font-weight:700;
 }
+.jc_fp-text-box.link h3 {
+    font-weight:300;
+}
 .jc_fp-text-box p {
     line-height: 1.4;
+    max-width: 400px;
+    width: 100%;
 }
 
 /* ------------------------------------------------
@@ -416,16 +437,38 @@ body {
     margin-bottom:0px;
 }
 
+/* Home */
+
+.jc_fp-news-box {
+    background: #e6e9eb url(img/icon-news.svg) no-repeat 97% 20px;
+    -webkit-background-size: 35px 35px;
+            background-size: 35px;
+}
+.jc_icon-arrow-down {
+    width:100%;
+    max-width:20px;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+}
+.link .jc_icon-arrow-down svg .arrow-down-cls-3 {
+    fill:#e85211;
+}
+
 /* ------------------------------------------------
  The Team
 ------------------------------------------------ */
 
+.jc_the-team {
+    padding:0px 16px;
+}
 .jc_square-grid.jc_team-grid .jc_news-archive-overlay {
     -webkit-box-orient:horizontal;
     -webkit-box-direction:normal;
     -webkit-flex-flow:row wrap;
     -ms-flex-flow:row wrap;
     flex-flow:row wrap;
+    background: rgba(27,30,60,.85);
 }
 .jc_team-grid .jc_news-archive-overlay h2 {
     padding-bottom:0px;
@@ -439,7 +482,50 @@ body {
     -ms-flex-preferred-size:100%;
     flex-basis:100%;
 }
-
+.jc_square-grid.jc_team-grid a:hover .jc_news-archive-overlay {
+    height: 93px;
+}
+.jc_hero-overlay h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.jc_team-join {
+    background: #d1d2d8;
+    margin: 8px 0px;
+    font-size: 15px;
+    padding: 60px 0px;
+    line-height: 1.4;
+}
+.jc_team-join .jc_wrap {
+    padding: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.jc_team-join p {
+    padding-bottom:20px;
+}
+.jc_team-join p:last-child {
+    padding-bottom:0px;
+}
+.jc_team-join-section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding:0px 20px
+}
+.jc_team-join-section a {
+    text-decoration:none;
+    color:#000;
+}
+.jc_team-join-section h2 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size:16px;
+}
 
 /* ------------------------------------------------
  News
@@ -455,7 +541,8 @@ body {
     -webkit-flex-flow:row wrap;
     -ms-flex-flow:row wrap;
     flex-flow:row wrap;
-    margin:0px -8px;
+    margin:0px;
+    padding:0px 8px;
 }
 .jc_news-archive li {
     -webkit-flex-basis:33.333%;
@@ -498,6 +585,12 @@ body {
 .jc_news-archive-icon {
     text-align: right;
     font-size: 34px;
+}
+
+/* Taxonomy Landing */
+
+.jc_taxonomy-grid .jc_news-archive-overlay h2 {
+    padding-bottom:0px;
 }
 
 /* Single page project test */
@@ -576,6 +669,30 @@ body {
 }
 .jct_l-s p {
     padding-bottom:20px;
+}
+/* Test Practice */
+
+.jc_test-practice-quote {
+    padding:60px 0px;
+}
+.jc_test-practice-quote blockquote {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 26px;
+}
+.jc_test-practice-quote cite {
+    padding-top:20px;
+    font-size:20px;
+    display:block;
+    font-style: italic;
+}
+.jc_test-practice-second-hero img {
+    width:100%;
+    max-width:100%;
+    display:block;
+    height:auto;
 }
 
 /* ------------------------------------------------

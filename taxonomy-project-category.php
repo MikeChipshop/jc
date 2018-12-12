@@ -5,8 +5,13 @@
                 <?php while ( have_posts() ) : the_post(); ?>
                     <li>
                         <div class="jc_news-archive-item">
+                            <?php
+                                $attachment_id = get_field('taxonomy_image',$term->term_id);
+                                $size = "square";
+                                $image = wp_get_attachment_image_src( $attachment_id, $size );
+                            ?>
                             <a href="">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/square.jpg" alt="">
+                                <img src="<?php echo $image[0]; ?>" alt="">
                                 <div class="jc_news-archive-overlay">
                                     <h2><?php the_title(); ?></h2>
                                 </div>

@@ -32,8 +32,9 @@ if ( function_exists( 'add_image_size' ) ) add_theme_support( 'post-thumbnails' 
 /***************************************************/
 
 if ( function_exists( 'add_image_size' ) ) {
-	add_image_size( 'news', 630, 950, false );
-	add_image_size( 'team', 600, 400, true );
+	add_image_size( 'news', 630, 950, true );
+    add_image_size( 'team', 600, 400, true );
+    add_image_size( 'square', 600, 600, true );
 }
 
 /****************************************************

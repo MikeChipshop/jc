@@ -13,10 +13,37 @@
             </div>
             <div class="jc_grid-100">
                 <div class="cat-e jc_grid-flex-content">
-                    <div class="jc_fp-text-box">
+                    <div class="jc_fp-text-box jc_fp-news-box">
                         <h2>News</h2>
                         <h3>Serena House</h3>
                         <p>This Victorian family house was fully refurbished and remodelled to suit modern family living.</p>
+                        <div class="jc_icon-arrow-down">
+                            <a href="#"></a>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                    <defs>
+                                        <style>
+                                            .arrow-down-cls-1,.arrow-down-cls-3{
+                                                fill:none;
+                                            }
+                                            .arrow-down-cls-2{
+                                                clip-path:url(#arrow-down-clip-path);
+                                            }
+                                            .arrow-down-cls-3{
+                                                stroke:#0e173c;
+                                            }
+                                        </style>
+                                        <clipPath id="arrow-down-clip-path">
+                                            <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
+                                        </clipPath>
+                                    </defs>
+                                    <title>Down Arrow</title>
+                                    <g class="arrow-down-cls-2">
+                                        <polyline class="arrow-down-cls-3" points="0.354 16.572 10.424 26.643 20.496 16.572"/>
+                                        <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,6 +53,33 @@
                         <h2>Link</h2>
                         <h3><strong>Jo Cowen</strong> Capital</h3>
                         <p>Ment landaEt estrum corrupt atiaspel eum volorerum ipis audiciisquid etur?</p>
+                        <div class="jc_icon-arrow-down">
+                            <a href="#">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                    <defs>
+                                        <style>
+                                            .arrow-down-cls-1,.arrow-down-cls-3{
+                                                fill:none;
+                                            }
+                                            .arrow-down-cls-2{
+                                                clip-path:url(#arrow-down-clip-path);
+                                            }
+                                            .arrow-down-cls-3{
+                                                stroke:#0e173c;
+                                            }
+                                        </style>
+                                        <clipPath id="arrow-down-clip-path">
+                                            <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
+                                        </clipPath>
+                                    </defs>
+                                    <title>Down Arrow</title>
+                                    <g class="arrow-down-cls-2">
+                                        <polyline class="arrow-down-cls-3" points="0.354 16.572 10.424 26.643 20.496 16.572"/>
+                                        <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -146,15 +200,69 @@
                         <h2>Contact</h2>
                         <h3>Talk to us</h3>
                         <p>Poria sequate accabor emporia consedi corpori quatiamus solor sunt plitiissit.</p>
+                        <div class="jc_icon-arrow-down">
+                            <a href="#"></a>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                    <defs>
+                                        <style>
+                                            .arrow-down-cls-1,.arrow-down-cls-3{
+                                                fill:none;
+                                            }
+                                            .arrow-down-cls-2{
+                                                clip-path:url(#arrow-down-clip-path);
+                                            }
+                                            .arrow-down-cls-3{
+                                                stroke:#0e173c;
+                                            }
+                                        </style>
+                                        <clipPath id="arrow-down-clip-path">
+                                            <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
+                                        </clipPath>
+                                    </defs>
+                                    <title>Down Arrow</title>
+                                    <g class="arrow-down-cls-2">
+                                        <polyline class="arrow-down-cls-3" points="0.354 16.572 10.424 26.643 20.496 16.572"/>
+                                        <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-e jc_grid-flex-content">
-                    <div class="jc_fp-text-box">
+                    <div class="jc_fp-text-box jc_fp-news-box">
                         <h2>News</h2>
                         <h3>RIBA 2018</h3>
                         <p>Poria sequate accabor emporia consedi corpori quatiamus solor sunt plitiissit.</p>
+                        <div class="jc_icon-arrow-down">
+                            <a href="#"></a>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                    <defs>
+                                        <style>
+                                            .arrow-down-cls-1,.arrow-down-cls-3{
+                                                fill:none;
+                                            }
+                                            .arrow-down-cls-2{
+                                                clip-path:url(#arrow-down-clip-path);
+                                            }
+                                            .arrow-down-cls-3{
+                                                stroke:#0e173c;
+                                            }
+                                        </style>
+                                        <clipPath id="arrow-down-clip-path">
+                                            <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
+                                        </clipPath>
+                                    </defs>
+                                    <title>Down Arrow</title>
+                                    <g class="arrow-down-cls-2">
+                                        <polyline class="arrow-down-cls-3" points="0.354 16.572 10.424 26.643 20.496 16.572"/>
+                                        <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,8 +287,6 @@
             </div>
         </div>
     </div>
-
-
 </div>
 
 <?php get_footer(); ?>

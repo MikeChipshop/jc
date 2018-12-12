@@ -1,8 +1,9 @@
 <?php get_header(); ?>
+<div class="jc_page-hero">
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/news-hero.jpg">
+    <div class="jc_hero-overlay"><h1>News</h1></div>
+</div>
 <div class="jc_wrap">
-    <div class="jc_page-hero">
-        Hero Image
-    </div>
     <?php if ( have_posts() ) : ?>
         <ul class="jc_news-archive">
             <?php while ( have_posts() ) : the_post(); ?>
