@@ -12,7 +12,7 @@
 <header class="jc_global-header">
     <div class="jc_wrap">
         <div class="jc_header-logo">
-            <a href="#">
+            <a href="<?php bloginfo('url'); ?>">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Logo">
             </a>
         </div>
