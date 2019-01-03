@@ -15,6 +15,9 @@
             <a href="<?php bloginfo('url'); ?>">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Logo">
             </a>
+            <div class="jc_menu-toggle">
+                <i class="far fa-bars"></i>
+            </div>
         </div>
         <nav>
             <ul>

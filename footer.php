@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="jc_footer-details">
-                    &copy; Jo Cowen Architects Ltd. Co. No. 8754147. Vat No. 184 1989 65.
+                    <span>&copy; Jo Cowen Architects Ltd. Co. No. 8754147. Vat No. 184 1989 65.</span>
                     <ul><?php wp_nav_menu( array('theme_location' => 'footer_menu' )); ?></ul>
             </div>
         </div>
@@ -36,6 +36,41 @@
         </div>
     </div>
 </footer>
+<section class="jc_contact">
+    <div class="jc_contact-wrap">
+        <div class="jc_contact-wrap-cont">
+            <div class="jc_contact-wrap-left">
+                <div>
+                    To discuss a project or find out more about how we can work together, please get in touch.
+                </div>
+                <div>
+                    <div>
+                        <h2>Address</h2>
+                        Jo Cowen Architects<br />
+                        533 King’s Road<br />
+                        London SW10 0TZ<br />
+                        United Kingdom
+                    </div>
+                    <div>
+                        <a href="#">Get directions / View Map</a>
+                    </div>
+                </div>
+                <div>
+                    <h2>Lets talk</h2>
+                    <a href="#">+44 (0) 0207 371 0357</a>
+                </div>
+                <div>
+                    <h2>Enquiries</h2>
+                    <a href="#">info@jocowenarchitects.com</a>
+                </div>
+            </div>
+            <div class="jc_contact-wrap-right">
+                <button class="jc_close-contact jc_contact-toggle">X</button>
+                Form
+            </div>
+        </div>
+    </div>
+</section>
 <?php wp_footer(); ?>
 </body>
 </html>
