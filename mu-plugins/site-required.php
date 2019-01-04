@@ -175,13 +175,14 @@ add_theme_support( 'title-tag' );
 
 /***************************************************
 / Options Pages
-/***************************************************
+/***************************************************/
 if(function_exists('acf_add_options_page')) {
 
-	acf_add_options_page();
+    acf_add_options_page();
+    acf_add_options_sub_page('Contact');
     acf_add_options_sub_page('Misc');
 
-} */
+}
 
 /***************************************************
 / ADD PARENT SLUG TO BODY CLASS
