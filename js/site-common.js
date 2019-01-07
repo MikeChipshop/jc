@@ -9,4 +9,12 @@ jQuery(document).ready(function( $ ) {
         $( "body" ).toggleClass("jc_contact-open");
     });
 
+    $( ".jc_video-box a" ).click(function(e) {
+        //var $this = $(this);
+        e.preventDefault();
+        $( "body" ).addClass("jc_video-open");
+        var $videoid = $(this).data("embed");
+        $(".jc_fp-video-pop-up-wrap").html($videoid);
+    });
+
 });

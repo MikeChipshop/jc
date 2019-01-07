@@ -66,11 +66,19 @@
             </div>
             <div class="jc_contact-wrap-right">
                 <button class="jc_close-contact jc_contact-toggle">X</button>
-                Form
+                <div class="jc_popup-form-wrap">
+                    <?php echo do_shortcode( "[contact-form-7 id='375' title='Contact Form']" ); ?>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="jc_fp-video-pop-up">
+    <div class="jc_fp-video-pop-up-wrap">
+        Video
+    </div>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>

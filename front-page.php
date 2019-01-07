@@ -4,7 +4,7 @@
     <div class="jc_grid-100 jc_grid-flex">
         <div class="jc_grid-33">
             <div class="jc_grid-100">
-                <div class="cat-a jc_grid-flex-content" id="block-1">
+                <div class="cat-a jc_grid-flex-content<?php if(get_field('block_1_video')): ?> jc_video-box<?php endif; ?>" id="block-1">
                     <?php
                         $attachment_id = get_field('block_1_image');
                         $size = "full";
@@ -91,15 +91,20 @@
             </div>
         <div class="jc_grid-66">
             <div class="jc_grid-50">
-                <div class="cat-c jc_grid-flex-content" id="block-2">
+
+                <div class="cat-c jc_grid-flex-content<?php if(get_field('block_2_video')): ?> jc_video-box<?php endif; ?>" id="block-2">
                     <?php
                         $attachment_id = get_field('block_2_image');
                         $size = "full";
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_2_title'); ?>">
-                    <a href="<?php the_field('block_2_link'); ?>" class="jc_overlay">
-                        <h2><?php the_field('block_2_title'); ?></h2>
+                    <a href="<?php the_field('block_2_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_2_video_embed_code'); ?>">
+                        <?php if(get_field('block_2_video')): ?>
+                            <h2 class="jc_play-button"><i class="fas fa-play"></i></h2>
+                        <?php else: ?>
+                            <h2><?php the_field('block_2_title'); ?></h2>
+                        <?php endif; ?>
                     </a>
                 </div>
             </div>
