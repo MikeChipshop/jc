@@ -867,7 +867,8 @@ body {
 
 /* Taxonomy Landing */
 
-.jc_taxonomy-grid .jc_news-archive-overlay h2 {
+.jc_taxonomy-grid .jc_news-archive-overlay h2,
+.jc_news-archive-overlay.jc_taxonomy-archive-item h2 {
     padding-bottom:0px;
 }
 
@@ -1104,6 +1105,7 @@ body {
     color: #4A4A4A;
     font-size: 16px;
     font-weight: 300;
+    width:100%;
 }
 .jc_popup-form-wrap input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-family: proxima-nova, sans-serif;
@@ -1147,6 +1149,27 @@ body {
     background-color: #ffffff;
     font-size: 20px;
     cursor:pointer;
+}
+span.wpcf7-not-valid-tip {
+    display:none!important;
+}
+div.wpcf7-validation-errors, 
+div.wpcf7-acceptance-missing {
+    color: #f70000;
+    border:none;
+}
+div.wpcf7-response-output {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    left: 0px;
+    margin-left: 5%;
+    border:none;
+    text-align: center;
+}
+input.wpcf7-not-valid,
+textarea.wpcf7-not-valid {
+    background-color: #ffdcdc;
 }
 /* ------------------------------------------------
  Global Footer

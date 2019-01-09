@@ -11,8 +11,8 @@
                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                             ?>
                             <a href="<?php the_permalink(); ?>">
-                                <img src="<?php echo $image[0]; ?>" alt="">
-                                <div class="jc_news-archive-overlay">
+                                <?php the_post_thumbnail( 'full' ); ?>
+                                <div class="jc_news-archive-overlay jc_taxonomy-archive-item">
                                     <h2><?php the_title(); ?></h2>
                                 </div>
                             </a>
