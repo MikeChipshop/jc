@@ -15,7 +15,7 @@
                                 </div>
                             <?php elseif(get_sub_field('c1_single_column_content') === 'text'): ?>
                                 <div class="jc_rte-text">
-                                    <?php the_sub_field('c1_single_column_content_text'); ?>
+                                    <?php the_sub_field('c1_single_column_text_area'); ?>
                                 </div>
                             <?php else: ?>
                                 <h2>No Content</h2>

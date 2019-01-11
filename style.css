@@ -581,6 +581,11 @@ body {
     align-items: flex-end;
 }
 
+/* One Column */
+.single-column-child .jc_rte-text {
+    margin:0 auto;
+}
+
 /* Two Column */
 /* 11 */
 .layout-11 > div {
@@ -1021,7 +1026,7 @@ body {
     border:1px solid #000;
 }
 .jc_contact-wrap .jc_contact-wrap-cont > div {
-    padding: 60px;
+    padding: 60px 10px 0px 40px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
