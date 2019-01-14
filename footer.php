@@ -76,7 +76,10 @@
 
 <div class="jc_fp-video-pop-up">
     <div class="jc_fp-video-pop-up-wrap">
-        Video
+        <div class="jc_responsive-video">
+
+        </div>
+        <button class="jc_close-video">X</button>
     </div>
 </div>
 <?php wp_footer(); ?>

@@ -9,6 +9,15 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php if(is_page('home')): ?>
+<div class="jc_home-hero">
+    <div class="jc_home-hero-slides">
+        <div class="jc_home-hero-slides" style="background: #fff url(<?php bloginfo('stylesheet_directory'); ?>/img/slide.jpg) no-repeat center center;background-size: cover;">
+            <h2><strong>Jo Cowen </strong> Architects</h2>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
 <header class="jc_global-header">
     <div class="jc_wrap">
         <div class="jc_header-logo">

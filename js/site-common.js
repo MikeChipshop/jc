@@ -14,7 +14,12 @@ jQuery(document).ready(function( $ ) {
         e.preventDefault();
         $( "body" ).addClass("jc_video-open");
         var $videoid = $(this).data("embed");
-        $(".jc_fp-video-pop-up-wrap").html($videoid);
+        $(".jc_responsive-video").html($videoid);
+    });
+
+    $( ".jc_close-video" ).click(function(e) {
+        $( "body" ).removeClass("jc_video-open");
+        $(".jc_responsive-video").html("");
     });
 
 });
