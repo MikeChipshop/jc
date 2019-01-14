@@ -22,9 +22,9 @@
                         <img src="<?php the_post_thumbnail_url( 'team'); ?>" alt="<?php the_title(); ?>">
                         <div class="jc_news-archive-overlay">
                             <h2><?php the_title(); ?></h2>
-                            <!-- <?php if(get_field('team_member_role')): ?>
+                            <?php if(get_field('team_member_role')): ?>
                                 <h3><?php the_field('team_member_role'); ?></h3>
-                            <?php endif; ?> -->
+                            <?php endif; ?>
                         </div>
                     </a>
                 </div>

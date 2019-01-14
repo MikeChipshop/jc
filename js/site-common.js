@@ -22,4 +22,24 @@ jQuery(document).ready(function( $ ) {
         $(".jc_responsive-video").html("");
     });
 
+    $('.jc_home-hero-slides').lightSlider({
+        item:1,
+        auto:true,
+        loop:true,
+        slideMove:1,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        slideMargin:0,
+        pause: 6000,
+        mode: 'fade',
+        prevHtml:'<img src="../wp-content/themes/jocowen/img/left-arrow.svg">',
+        nextHtml:'<img src="../wp-content/themes/jocowen/img/right-arrow.svg">',
+    });
+
+    $(".jc_home-hero button").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#jc_header").offset().top},
+            'slow');
+    });
+
 });

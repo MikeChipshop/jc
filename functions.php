@@ -43,12 +43,16 @@ ENQUEUES
 function to_load_scripts() {
 
 	wp_register_script( 'site-common', get_template_directory_uri() . '/js/site-common.js', array('jquery'),'null',true  );
+	wp_register_script( 'lightslider', get_template_directory_uri() . '/js/lightslider.min.js', array('jquery'),time(),true  );
 	wp_register_style( 'font-css', 'https://fonts.googleapis.com/css?family=Poppins:400,500,700','','', 'screen' );
 	wp_register_style( 'main-css', get_template_directory_uri() . '/style.css','',time(), 'screen' );
+	wp_register_style( 'lightslider-css', get_template_directory_uri() . '/css/lightslider.min.css','','', 'screen' );
 
 	wp_enqueue_script( 'site-common' );
+	wp_enqueue_script( 'lightslider' );
 	wp_enqueue_style( 'font-css' );
 	wp_enqueue_style( 'main-css' );
+	wp_enqueue_style( 'lightslider-css' );
 }
 
 add_action('wp_enqueue_scripts', 'to_load_scripts');
