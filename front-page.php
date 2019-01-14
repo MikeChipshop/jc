@@ -12,13 +12,11 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_1_title'); ?>">
-                    <a href="<?php the_field('block_1_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_1_video_embed_code'); ?>">
+                    <a href="<?php the_field('block_1_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_1_video_embed_code"); ?>'>
                         <?php if(get_field('block_1_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <?php the_field('block_1_title'); ?>
                             </h2>
                         <?php else: ?>
                             <h2><?php the_field('block_1_title'); ?></h2>
@@ -109,13 +107,11 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_2_title'); ?>">
-                    <a href="<?php the_field('block_2_link'); ?>" class="jc_overlay" data-embed="<?php the_field('block_2_video_embed_code'); ?>">
+                    <a href="<?php the_field('block_2_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_2_video_embed_code"); ?>'>
                         <?php if(get_field('block_2_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg>
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <?php the_field('block_2_title'); ?>
                             </h2>
                         <?php else: ?>
                             <h2><?php the_field('block_2_title'); ?></h2>
@@ -131,13 +127,11 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_3_title'); ?>">
-                    <a href="<?php the_field('block_3_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_3_video_embed_code'); ?>">
+                    <a href="<?php the_field('block_3_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_3_video_embed_code"); ?>'>
                         <?php if(get_field('block_3_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <?php the_field('block_3_title'); ?>
                             </h2>
                         <?php else: ?>
                             <h2><?php the_field('block_3_title'); ?></h2>
@@ -153,13 +147,11 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_6_title'); ?>">
-                    <a href="<?php the_field('block_6_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_6_video_embed_code'); ?>">
+                    <a href="<?php the_field('block_6_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_6_video_embed_code"); ?>'>
                         <?php if(get_field('block_6_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg>
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <?php the_field('block_6_title'); ?>
                             </h2>
                         <?php else: ?>
                             <h2><?php the_field('block_6_title'); ?></h2>
@@ -180,12 +172,12 @@
                     $image = wp_get_attachment_image_src( $attachment_id, $size );
                 ?>
                 <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_7_title'); ?>">
-                <a href="<?php the_field('block_7_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_7_video_embed_code'); ?>">
+                <a href="<?php the_field('block_7_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_7_video_embed_code"); ?>'>
                     <?php if(get_field('block_7_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_7_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_7_title'); ?></h2>
                     <?php endif; ?>
@@ -200,12 +192,12 @@
                     $image = wp_get_attachment_image_src( $attachment_id, $size );
                 ?>
                 <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_8_title'); ?>">
-                <a href="<?php the_field('block_8_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_8_video_embed_code'); ?>">
+                <a href="<?php the_field('block_8_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_8_video_embed_code"); ?>'>
                     <?php if(get_field('block_8_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_8_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_8_title'); ?></h2>
                     <?php endif; ?>
@@ -255,12 +247,12 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_10_title'); ?>">
-                    <a href="<?php the_field('block_10_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_10_video_embed_code'); ?>">
+                    <a href="<?php the_field('block_10_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_10_video_embed_code"); ?>'>
                         <?php if(get_field('block_10_video')): ?>
-                            <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                            <h2 class="jc_play-button">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <?php the_field('block_10_title'); ?>
+                            </h2>
                         <?php else: ?>
                             <h2><?php the_field('block_10_title'); ?></h2>
                         <?php endif; ?>
@@ -275,12 +267,12 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_11_title'); ?>">
-                    <a href="<?php the_field('block_11_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_11_video_embed_code'); ?>">
+                    <a href="<?php the_field('block_11_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_11_video_embed_code"); ?>'>
                         <?php if(get_field('block_11_video')): ?>
-                            <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                            <h2 class="jc_play-button">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <?php the_field('block_11_title'); ?>
+                            </h2>
                         <?php else: ?>
                             <h2><?php the_field('block_11_title'); ?></h2>
                         <?php endif; ?>
@@ -299,12 +291,12 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_12_title'); ?>">
-                <a href="<?php the_field('block_12_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_12_video_embed_code'); ?>">
+                <a href="<?php the_field('block_12_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_12_video_embed_code"); ?>'>
                     <?php if(get_field('block_12_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_12_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_12_title'); ?></h2>
                     <?php endif; ?>
@@ -319,12 +311,12 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_13_title'); ?>">
-                <a href="<?php the_field('block_13_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_13_video_embed_code'); ?>">
+                <a href="<?php the_field('block_13_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_13_video_embed_code"); ?>'>
                     <?php if(get_field('block_13_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_13_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_13_title'); ?></h2>
                     <?php endif; ?>
@@ -342,12 +334,12 @@
                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                     ?>
                     <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_14_title'); ?>">
-                <a href="<?php the_field('block_14_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_14_video_embed_code'); ?>">
+                <a href="<?php the_field('block_14_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_14_video_embed_code"); ?>'>
                     <?php if(get_field('block_14_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_14_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_14_title'); ?></h2>
                     <?php endif; ?>
@@ -362,12 +354,12 @@
                     $image = wp_get_attachment_image_src( $attachment_id, $size );
                 ?>
                 <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_15_title'); ?>">
-                <a href="<?php the_field('block_15_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_15_video_embed_code'); ?>">
+                <a href="<?php the_field('block_15_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_15_video_embed_code"); ?>'>
                     <?php if(get_field('block_15_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_15_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_15_title'); ?></h2>
                     <?php endif; ?>
@@ -459,13 +451,11 @@
                     $image = wp_get_attachment_image_src( $attachment_id, $size );
                 ?>
                 <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_18_title'); ?>">
-                <a href="<?php the_field('block_18_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_18_video_embed_code'); ?>">
+                <a href="<?php the_field('block_18_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_18_video_embed_code"); ?>'>
                     <?php if(get_field('block_18_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                            </svg>
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_18_title'); ?>
                         </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_18_title'); ?></h2>
@@ -481,12 +471,12 @@
                     $image = wp_get_attachment_image_src( $attachment_id, $size );
                 ?>
                 <img src="<?php echo $image[0]; ?>" alt="Visit <?php the_field('block_19_title'); ?>">
-                <a href="<?php the_field('block_19_link'); ?>" class="jc_overlay" data-embed="https://player.vimeo.com/video/<?php the_field('block_19_video_embed_code'); ?>">
+                <a href="<?php the_field('block_19_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_19_video_embed_code"); ?>'>
                     <?php if(get_field('block_19_video')): ?>
-                        <h2 class="jc_play-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-                                    <style type="text/css">.st0{fill:#FFFFFF;}</style>
-                                    <polygon class="st0" points="178.58,327.72 178.58,515.79 417.42,421.76 "/>
-                                </svg></h2>
+                        <h2 class="jc_play-button">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <?php the_field('block_19_title'); ?>
+                        </h2>
                     <?php else: ?>
                         <h2><?php the_field('block_19_title'); ?></h2>
                     <?php endif; ?>

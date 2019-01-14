@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="jc_page-hero">
     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/news-hero.jpg">
-    <div class="jc_hero-overlay"><h1>Search Results</h1></div>
+    <div class="jc_hero-overlay"><h1><strong>Search Results:</strong> <?php the_search_query(); ?></h1></div>
 </div>
 <div class="jc_wrap">
     <?php if ( have_posts() ) : ?>

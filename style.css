@@ -475,6 +475,7 @@ body {
     left:50%;
     margin-left:-12px;
     cursor:pointer;
+    z-index:99;
 }
 .jc_home-hero button img {
     width:24px;
@@ -512,7 +513,7 @@ body {
 .jc_home-hero-slides h2 strong {
     font-weight:500;
 }
-.lSSlideOuter .lSPager, 
+.lSSlideOuter .lSPager,
 .lSSlideOuter .lightSlider,
 .lSSlideWrapper,
 .lSSlideOuter {
@@ -606,8 +607,12 @@ body {
     height: 100%;
 }
 .jc_play-button svg {
-    width:200px;
-    height:auto;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
 }
 .jc_close-video {
     position: absolute;
@@ -839,10 +844,13 @@ body {
     color:#BF9B2E;
 }
 .jc_hero-overlay h1 {
-    font-size: 25px;
+    font-size: 26px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100;
+    letter-spacing: 6px;
+    font-weight: 300;
+}
+.jc_hero-overlay h1 strong {
+    font-weight:500;
 }
 .jc_team-join {
     background: #d1d2d8;
@@ -898,6 +906,7 @@ body {
     -ms-flex-preferred-size:33.333%;
     flex-basis:33.333%;
     padding:4px;
+    position:relative;
 }
 .jc_news-archive img {
     width:100%;
