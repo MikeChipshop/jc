@@ -47,7 +47,15 @@
         <nav>
             <ul>
                 <?php wp_nav_menu( array('theme_location' => 'main_menu' )); ?>
-                <li><a href="#"><i class="fal fa-search fa-flip-horizontal"></i></a></li>
+                <li>
+                    <div class="jc_header-search-wrap">
+                        <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+					        <input  placeholder="Search..." type="search" value="Search..." name="s" id="s" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+					        <button id="searchsubmit">Search</button>
+				        </form>
+                    </div>
+                    <a href="#"><i class="fal fa-search fa-flip-horizontal"></i></a>
+                </li>
             </ul>
         </nav>
     </div>
