@@ -200,7 +200,7 @@ body {
     display:none;
 }
 .jc_global-header ul.sub-menu a:hover {
-    color:#bf9b2e;
+    color:#bdbabc;
 }
 
 /* ------------------------------------------------
@@ -841,7 +841,7 @@ body {
     flex-basis:100%;
 }
 .jc_square-grid.jc_team-grid a:hover .jc_news-archive-overlay {
-    color:#BF9B2E;
+    color:#bdbabc;
 }
 .jc_hero-overlay h1 {
     font-size: 26px;
