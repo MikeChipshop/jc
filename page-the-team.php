@@ -171,6 +171,148 @@
     <?php endif; ?>
 </ul>
 
+<?php // Section Six // ?>
+<ul class="jc_news-archive jc_square-grid jc_team-grid">
+    <?php
+        $ids6 = get_field('team_section_six', false, false);
+        $secsixargs = array(
+            'post_type'      	=> 'team',
+            'posts_per_page'	=> -1,
+            'post__in' => ((!isset($ids6) || empty($ids6)) ? array(-1) : $ids6),
+            'post_status'       => 'publish',
+            'orderby'        	=> 'post__in',
+        );
+    ?>
+    <?php $secsixloop = new WP_Query( $secsixargs ); ?>
+    <?php if ( $secsixloop->have_posts() ): ?>
+        <?php while ( $secsixloop->have_posts() ) : $secsixloop->the_post(); ?>
+            <li>
+                <div class="jc_news-archive-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <img src="<?php the_post_thumbnail_url( 'team'); ?>" alt="<?php the_title(); ?>">
+                        <div class="jc_news-archive-overlay">
+                            <h2><?php the_title(); ?></h2>
+                            <?php if(get_field('team_member_role')): ?>
+                                <h3><?php the_field('team_member_role'); ?></h3>
+                            <?php endif; ?>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    <?php endif; ?>
+</ul>
+
+<?php // Section Seven // ?>
+<ul class="jc_news-archive jc_square-grid jc_team-grid">
+    <?php
+        $ids7 = get_field('team_section_seven', false, false);
+        $secsevenargs = array(
+            'post_type'      	=> 'team',
+            'posts_per_page'	=> -1,
+            'post__in' => ((!isset($ids7) || empty($ids7)) ? array(-1) : $ids7),
+            'post_status'       => 'publish',
+            'orderby'        	=> 'post__in',
+        );
+    ?>
+    <?php $secsevenloop = new WP_Query( $secsevenargs ); ?>
+    <?php if ( $secsevenloop->have_posts() ): ?>
+        <?php while ( $secsevenloop->have_posts() ) : $secsevenloop->the_post(); ?>
+            <li>
+                <div class="jc_news-archive-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <img src="<?php the_post_thumbnail_url( 'team'); ?>" alt="<?php the_title(); ?>">
+                        <div class="jc_news-archive-overlay">
+                            <h2><?php the_title(); ?></h2>
+                            <?php if(get_field('team_member_role')): ?>
+                                <h3><?php the_field('team_member_role'); ?></h3>
+                            <?php endif; ?>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    <?php endif; ?>
+</ul>
+
+<?php // Section Eight // ?>
+<ul class="jc_news-archive jc_square-grid jc_team-grid">
+    <?php
+        $ids8 = get_field('team_section_seven', false, false);
+        $seceightargs = array(
+            'post_type'      	=> 'team',
+            'posts_per_page'	=> -1,
+            'post__in' => ((!isset($ids8) || empty($ids8)) ? array(-1) : $ids8),
+            'post_status'       => 'publish',
+            'orderby'        	=> 'post__in',
+        );
+    ?>
+    <?php $seceightloop = new WP_Query( $seceightargs ); ?>
+    <?php if ( $seceightloop->have_posts() ): ?>
+        <?php while ( $seceightloop->have_posts() ) : $seceightloop->the_post(); ?>
+            <li>
+                <div class="jc_news-archive-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <img src="<?php the_post_thumbnail_url( 'team'); ?>" alt="<?php the_title(); ?>">
+                        <div class="jc_news-archive-overlay">
+                            <h2><?php the_title(); ?></h2>
+                            <?php if(get_field('team_member_role')): ?>
+                                <h3><?php the_field('team_member_role'); ?></h3>
+                            <?php endif; ?>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    <?php endif; ?>
+</ul>
+
+<?php // Section Nine // ?>
+<ul class="jc_news-archive jc_square-grid jc_team-grid">
+    <?php
+        $ids9 = get_field('team_section_seven', false, false);
+        $secnineargs = array(
+            'post_type'      	=> 'team',
+            'posts_per_page'	=> -1,
+            'post__in' => ((!isset($ids9) || empty($ids9)) ? array(-1) : $ids9),
+            'post_status'       => 'publish',
+            'orderby'        	=> 'post__in',
+        );
+    ?>
+    <?php $secnineloop = new WP_Query( $secnineargs ); ?>
+    <?php if ( $secnineloop->have_posts() ): ?>
+        <?php while ( $secnineloop->have_posts() ) : $secnineloop->the_post(); ?>
+            <li>
+                <div class="jc_news-archive-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <img src="<?php the_post_thumbnail_url( 'team'); ?>" alt="<?php the_title(); ?>">
+                        <div class="jc_news-archive-overlay">
+                            <h2><?php the_title(); ?></h2>
+                            <?php if(get_field('team_member_role')): ?>
+                                <h3><?php the_field('team_member_role'); ?></h3>
+                            <?php endif; ?>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    <?php endif; ?>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 </div>
 <div class="jc_team-join">
