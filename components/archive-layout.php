@@ -6,12 +6,21 @@
                         <div class="single-column-child column-child">
                             <?php if(get_sub_field('c1_single_column_content') === 'image'): ?>
                                 <div class="jc_rte-image">
+                                    <?php if(get_sub_field('c1_single_column_linkable')): ?>
+                                        <a href="<?php the_sub_field('c1_single_column_link'); ?>">
+                                    <?php endif; ?>
                                     <?php
                                         $attachment_id = get_sub_field('c1_single_column_image');
                                         $size = "full";
                                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                                     ?>
                                     <img src="<?php echo $image[0]; ?>" alt="">
+                                    <?php if(get_sub_field('c1_single_column_linkable')): ?>
+                                        <h2><?php the_sub_field('c1_single_column_link_text'); ?></h2>
+                                    <?php endif; ?>
+                                    <?php if(get_sub_field('c1_single_column_linkable')): ?>
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             <?php elseif(get_sub_field('c1_single_column_content') === 'text'): ?>
                                 <div class="jc_rte-text">
@@ -31,12 +40,21 @@
 
                                     <?php if(get_sub_field('c2_column_one_content_select') === 'image'): ?>
                                         <div class="jc_rte-image">
+                                            <?php if(get_sub_field('c2_column_one_content_linkable')): ?>
+                                                <a href="<?php the_sub_field('c2_column_one_content_link'); ?>">
+                                            <?php endif; ?>
                                             <?php
                                                 $attachment_id = get_sub_field('c2_column_one_content_image');
                                                 $size = "full";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
+                                            <?php if(get_sub_field('c2_column_one_content_linkable')): ?>
+                                                <h2><?php the_sub_field('c2_column_one_content_link_text'); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if(get_sub_field('c2_column_one_content_linkable')): ?>
+                                                </a>
+                                            <?php endif; ?>
                                         </div>
                                     <?php elseif(get_sub_field('c2_column_one_content_select') === 'text'): ?>
                                         <div class="jc_rte-text jc_rte-text-align-<?php the_sub_field('c2_column_one_content_align'); ?>">
@@ -57,12 +75,21 @@
 
                                     <?php if(get_sub_field('c2_column_two_content_select') === 'image'): ?>
                                         <div class="jc_rte-image">
+                                            <?php if(get_sub_field('c2_column_two_content_linkable')): ?>
+                                                <a href="<?php the_sub_field('c2_column_two_content_link'); ?>">
+                                            <?php endif; ?>
                                             <?php
                                                 $attachment_id = get_sub_field('c2_column_two_content_image');
                                                 $size = "full";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
+                                            <?php if(get_sub_field('c2_column_two_content_linkable')): ?>
+                                                <h2><?php the_sub_field('c2_column_two_content_link_text'); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if(get_sub_field('c2_column_two_content_linkable')): ?>
+                                                </a>
+                                            <?php endif; ?>
                                         </div>
                                     <?php elseif(get_sub_field('c2_column_two_content_select') === 'text'): ?>
                                         <div class="jc_rte-text jc_rte-text-align-<?php the_sub_field('c2_column_two_content_align'); ?>">
@@ -121,12 +148,21 @@
 
                                     <?php if(get_sub_field('c3_column_two_content_select') === 'image'): ?>
                                         <div class="jc_rte-image">
+                                            <?php if(get_sub_field('c3_column_two_content_linkable')): ?>
+                                                <a href="<?php the_sub_field('c3_column_two_content_link'); ?>">
+                                            <?php endif; ?>
                                             <?php
                                                 $attachment_id = get_sub_field('c3_column_two_content_image');
                                                 $size = "full";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
+                                            <?php if(get_sub_field('c3_column_two_content_linkable')): ?>
+                                                <h2><?php the_sub_field('c3_column_two_content_link_text'); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if(get_sub_field('c3_column_two_content_linkable')): ?>
+                                                </a>
+                                            <?php endif; ?>
                                         </div>
                                     <?php elseif(get_sub_field('c3_column_two_content_select') === 'text'): ?>
                                         <div class="jc_rte-text jc_rte-text-align-<?php the_sub_field('c3_column_two_content_align'); ?>">
@@ -147,12 +183,21 @@
 
                                     <?php if(get_sub_field('c3_column_three_content_select') === 'image'): ?>
                                         <div class="jc_rte-image">
+                                            <?php if(get_sub_field('c3_column_three_content_linkable')): ?>
+                                                <a href="<?php the_sub_field('c3_column_three_content_link'); ?>">
+                                            <?php endif; ?>
                                             <?php
                                                 $attachment_id = get_sub_field('c3_column_three_content_image');
                                                 $size = "full";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
+                                            <?php if(get_sub_field('c3_column_three_content_linkable')): ?>
+                                                <h2><?php the_sub_field('c3_column_three_content_link_text'); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if(get_sub_field('c3_column_three_content_linkable')): ?>
+                                                </a>
+                                            <?php endif; ?>
                                         </div>
                                     <?php elseif(get_sub_field('c3_column_three_content_select') === 'text'): ?>
                                         <div class="jc_rte-text jc_rte-text-align-<?php the_sub_field('c3_column_three_content_align'); ?>">
