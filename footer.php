@@ -1,15 +1,12 @@
 <footer class="jc_global-footer">
     <div class="jc_wrap">
+        
         <div class="jc_footer-left">
             <div class="jc_footer-left-top">
-                <div class="jc_footer-address">
-                    Jo Cowen Architects<br />
-                    533 King's Road<br />
-                    London SW10 0TZ
-                </div>
+                <div class="jc_footer-address"><?php the_field('contact_address','option'); ?></div>
                 <div class="jc_footer-contact">
-                    <p><a href="tel:1234567789">+44 (0) 0207 371 1234</a></p>
-                    <p><a href="#">info@jocowenarchitects.com</a></p>
+                    <p><a href="tel:<?php the_field('contact_telephone_number','option'); ?>"><?php the_field('contact_telephone_number','option'); ?></a></p>
+                    <p><a href="mailto:<?php the_field('contact_email_address','option'); ?>"><?php the_field('contact_email_address','option'); ?></a></p>
                 </div>
             </div>
             <div class="jc_footer-details">
@@ -20,11 +17,21 @@
         <div class="jc_footer-right">
             <div class="jc_footer-social">
                 <ul>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-houzz"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <?php if(get_field('instagram_url','option')): ?>
+                        <li><a href="<?php the_field('instagram_url','option'); ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <?php endif; ?>
+                    <?php if(get_field('houzz_url','option')): ?>
+                        <li><a href="<?php the_field('houzz_url','option'); ?>" target="_blank"><i class="fab fa-houzz"></i></a></li>
+                    <?php endif; ?>
+                    <?php if(get_field('twitter_url','option')): ?>
+                        <li><a href="<?php the_field('twitter_url','option'); ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <?php endif; ?>
+                    <?php if(get_field('pinterest_url','option')): ?>
+                        <li><a href="<?php the_field('pinterest_url','option'); ?>" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                    <?php endif; ?>
+                    <?php if(get_field('facebook_url','option')): ?>
+                        <li><a href="<?php the_field('facebook_url','option'); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <div class="jc_footer-logos">
@@ -39,29 +46,31 @@
 <section class="jc_contact">
     <div class="jc_contact-wrap">
         <div class="jc_contact-wrap-cont">
-            <div class="jc_contact-wrap-left">
+            <?php
+                $attachment_id = get_field('contact_popup_background','option');
+                $size = "full";
+                $image = wp_get_attachment_image_src( $attachment_id, $size );
+            ?>
+            <div class="jc_contact-wrap-left" style="background: #494f6c url(<?php echo $image[0]; ?>) no-repeat center center;background-size: cover;">
                 <div>
-                    To discuss a project or find out more about how we can work together, please get in touch.
+                    <?php the_field('contact_introduction','option'); ?>
                 </div>
                 <div>
                     <div>
                         <h2>Address</h2>
-                        Jo Cowen Architects<br />
-                        533 King’s Road<br />
-                        London SW10 0TZ<br />
-                        United Kingdom
+                        <?php the_field('contact_address','option'); ?>
                     </div>
                     <div>
-                        <a href="#">Get directions / View Map</a>
+                        <a href="<?php the_field('contact_map_link','option'); ?>" target="_blank"><?php the_field('contact_map_link_text','option'); ?></a>
                     </div>
                 </div>
                 <div>
                     <h2>Lets talk</h2>
-                    <a href="#">+44 (0) 0207 371 0357</a>
+                    <a href="tel:<?php the_field('contact_telephone_number','option'); ?>"><?php the_field('contact_telephone_number','option'); ?></a>
                 </div>
                 <div>
                     <h2>Enquiries</h2>
-                    <a href="#">info@jocowenarchitects.com</a>
+                    <a href="mailto:<?php the_field('contact_email_address','option'); ?>"><?php the_field('contact_email_address','option'); ?></a>
                 </div>
             </div>
             <div class="jc_contact-wrap-right">

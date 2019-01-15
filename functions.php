@@ -242,3 +242,14 @@ function __THEME_PREFIX__wp_head() {
 </script>
 <?php
 }
+
+/***************************************************
+/ Options Pages
+/***************************************************/
+if(function_exists('acf_add_options_page')) {
+
+    acf_add_options_page();
+    acf_add_options_sub_page('Contact');
+    acf_add_options_sub_page('Misc');
+
+}

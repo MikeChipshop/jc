@@ -1143,8 +1143,6 @@ body {
 }
 
 .jc_contact-wrap .jc_contact-wrap-cont .jc_contact-wrap-left {
-    background:#494f6c url('img/contact-bg.jpg') no-repeat center center;
-    background-size:cover;
     color:#fff;
     line-height: 1.3;
     padding-right:30px;
