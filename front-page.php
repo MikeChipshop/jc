@@ -207,10 +207,12 @@
         <div class="jc_grid-33">
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-h jc_grid-flex-content" id="block-9">
-                    <div class="jc_fp-text-box">
-                        <h2><?php the_field('block_9_title'); ?> <span class="fal fa-star"></span></h2>
+                    
+                <div class="jc_fp-text-box jc_fp-news-box awards">
+                        <h2><?php the_field('block_9_title'); ?></h2>
+                        <p><?php the_field('block_9_content'); ?></p>
                         <div class="jc_icon-arrow-down">
-                            <a href="<?php the_field('block_9_link'); ?>">
+                            <a href="<?php the_field('block_4_link'); ?>">
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
