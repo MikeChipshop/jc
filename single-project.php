@@ -24,7 +24,7 @@
     <?php $projrandloop = new WP_Query( $projrandargs ); ?>
     <?php if ( $projrandloop->have_posts() ): ?>
 
-        <ul class="jc_news-archive jc_square-grid">
+        <ul class="jc_news-archive jc_square-grid jc_related-grid">
             <?php while ( $projrandloop->have_posts() ) : $projrandloop->the_post(); ?>
                 <li>
                     <div class="jc_news-archive-item">

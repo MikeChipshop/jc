@@ -100,6 +100,7 @@ body {
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight:300;
 }
 .jc_page-hero img {
     display: block;
@@ -428,9 +429,24 @@ body {
     -webkit-transition: height .2s;
     transition: height .2s;
     height: 93px;
+    letter-spacing:2px;
 }
 .jc_square-grid a:hover .jc_news-archive-overlay {
     height: 100%;
+}
+
+.jc_square-grid.jc_related-grid .jc_news-archive-overlay {
+    height:100%;
+    font-weight:300;
+}
+.jc_square-grid.jc_related-grid .jc_news-archive-overlay h2 {
+    opacity:0;
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    font-weight:300;
+}
+.jc_square-grid.jc_related-grid .jc_news-archive-overlay:hover h2 {
+    opacity:1;
 }
 
 /* Columns (Gutenberg) */
