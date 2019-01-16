@@ -41,6 +41,11 @@ jQuery(document).ready(function( $ ) {
             scrollTop: $("#jc_header").offset().top},
             'slow');
     });
+    $(".jc_scroll").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#jc_header").offset().top},
+            'slow');
+    });
 
     $( ".jc_global-header nav li:last-child a" ).click(function(e) {
         e.preventDefault();

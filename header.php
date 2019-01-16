@@ -16,23 +16,33 @@
 </head>
 <body <?php body_class(); ?>>
 <?php if(is_page('home')): ?>
-<div class="jc_home-hero">
-    <div class="jc_home-hero-slides">
-        <?php if( have_rows('home_slider') ): ?>
-            <?php while ( have_rows('home_slider') ) : the_row(); ?>
-                <?php
-                    $attachment_id = get_sub_field('hero_slide_image');
-                    $size = "full";
-                    $image = wp_get_attachment_image_src( $attachment_id, $size );
-                ?>
-                <div class="jc_home-hero-slide" style="background: #fff url(<?php echo $image[0]; ?>) no-repeat center center;background-size: cover;">
-                    <h2 class="jc_hero-text-<?php the_sub_field('home_slide_text_colour'); ?>"><?php the_sub_field('home_slide_title'); ?></h2>
-                </div>
-            <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
-    <button><img src="<?php bloginfo('stylesheet_directory'); ?>/img/down-arrow.svg"></button>
-</div>
+    <?php if(get_field('home_hero_type')): ?>
+        <div class="jc_home-hero">
+            <div class="jc_home-hero-slides">
+                <?php if( have_rows('home_slider') ): ?>
+                    <?php while ( have_rows('home_slider') ) : the_row(); ?>
+                        <?php
+                            $attachment_id = get_sub_field('hero_slide_image');
+                            $size = "full";
+                            $image = wp_get_attachment_image_src( $attachment_id, $size );
+                        ?>
+                        <div class="jc_home-hero-slide" style="background: #fff url(<?php echo $image[0]; ?>) no-repeat center center;background-size: cover;">
+                            <h2 class="jc_hero-text-<?php the_sub_field('home_slide_text_colour'); ?>"><?php the_sub_field('home_slide_title'); ?></h2>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+            <button><img src="<?php bloginfo('stylesheet_directory'); ?>/img/down-arrow.svg"></button>
+        </div>
+    <?php else: ?>
+        <div class="jc_home-hero-video">
+            <div class="jc_home-hero-video-container">
+                <iframe src="https://player.vimeo.com/video/<?php the_field('home_video_id'); ?>?background=1&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <h1><?php the_field('home_video_title'); ?></h1>
+            <a href="#" class="jc_scroll"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.85 27.35"><defs><style>.cls-1{fill:#ffffff;}</style></defs><title>Artboard 1</title><polyline class="cls-1" points="9.94 0 9.94 25.45 0.71 16.21 0 16.92 9.94 26.86 9.94 26.94 10.02 26.94 10.42 27.35 10.83 26.94 10.94 26.94 10.94 26.83 20.85 16.92 20.14 16.21 10.94 25.41 10.94 0"/></svg></a>
+        </div>
+    <?php endif; ?>
 <?php endif; ?>
 <header class="jc_global-header" id="jc_header">
     <div class="jc_wrap">
