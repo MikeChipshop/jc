@@ -42,7 +42,8 @@ jQuery(document).ready(function( $ ) {
             'slow');
     });
 
-    $( ".jc_global-header nav a" ).click(function() {
+    $( ".jc_global-header nav li:last-child a" ).click(function(e) {
+        e.preventDefault();
         $( "body" ).toggleClass("jc_search-open");
     });
 

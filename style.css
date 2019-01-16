@@ -219,7 +219,6 @@ body {
 .jc_header-search-wrap button {
     opacity: 0;
     position: absolute;
-    right: -99999px;
     width: 0px;
     height: 0px;
     padding: 0px;
@@ -1132,6 +1131,9 @@ body {
 .jc_news-archive-overlay.jc_taxonomy-archive-item h2 {
     padding-bottom:0px;
 }
+.page-template-tpl_project-archive .jc_page-hero {
+    height:auto;
+}
 
 /* Single page project test */
 
@@ -1551,10 +1553,11 @@ textarea.wpcf7-not-valid {
 @media only screen and (max-width : 800px) {
 
     /* Front Page */
-    .jc_grid-100 {
+    .jc_grid-100,
+    .jc_grid-66,
+    .jc_grid-50 {
         display:block;
     }
-
     .row-wrap {
         display:block;
     }
@@ -1588,6 +1591,7 @@ textarea.wpcf7-not-valid {
     }
     .jc_global-header ul li {
         padding-bottom: 20px;
+        display:block;
     }
     .jc_global-header ul li:after {
         content:none;
@@ -1601,8 +1605,34 @@ textarea.wpcf7-not-valid {
         display:none;
     }
     .jc_global-header nav a {
-        font-size:18px;
+        font-size:16px;
     }
+    .jc_global-header ul.sub-menu {
+        position:relative;
+        opacity:1;
+        display:block;
+        padding-left: 20px;
+        background: transparent;
+        color: rgba(27,29,59,1);
+        padding-top: 0px;
+    }
+    .jc_global-header ul.sub-menu a {
+        color: rgb(158, 158, 158);
+        text-transform: none;
+    }
+    .jc_header-search-wrap input[type="search"] {
+        width:200px;
+        width: 200px;
+        padding: 5px 10px;
+        margin-right: 5px;
+    }
+    .jc_search-open .jc_header-search-wrap input[type="search"] {
+        width:200px;
+    }
+    .jc_header-search-wrap {
+        display:inline-block;
+    }
+
     .jc_header-logo {
         padding: 0px 20px;
         display:-webkit-box;
@@ -1628,6 +1658,12 @@ textarea.wpcf7-not-valid {
     }
     .jc_news-archive {
         display:block;
+    }
+    .jc_home-hero-slides h2 {
+        font-size:20px;
+        padding:0px 20px;
+        text-align:center;
+        line-height:1.4;
     }
 
     /* Contact */
