@@ -15,7 +15,7 @@
                     <a href="<?php the_field('block_1_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_1_video_embed_code"); ?>'>
                         <?php if(get_field('block_1_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                                 <?php the_field('block_1_title'); ?>
                             </h2>
                         <?php else: ?>
@@ -32,7 +32,7 @@
                         <p><?php the_field('block_4_content'); ?></p>
                         <div class="jc_icon-arrow-down">
                             <a href="<?php the_field('block_4_link'); ?>">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
                                             .arrow-down-cls-1,.arrow-down-cls-3{
@@ -45,7 +45,7 @@
                                                 stroke:#0e173c;
                                             }
                                         </style>
-                                        <clipPath id="arrow-down-clip-path">
+                                        <clipPath>
                                             <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
                                         </clipPath>
                                     </defs>
@@ -68,7 +68,7 @@
                         <p><?php the_field('block_5_content'); ?></p>
                         <div class="jc_icon-arrow-down">
                             <a href="<?php the_field('block_5_link'); ?>">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
                                             .arrow-down-cls-1,.arrow-down-cls-3{
@@ -81,7 +81,7 @@
                                                 stroke:#0e173c;
                                             }
                                         </style>
-                                        <clipPath id="arrow-down-clip-path">
+                                        <clipPath>
                                             <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
                                         </clipPath>
                                     </defs>
@@ -110,7 +110,7 @@
                     <a href="<?php the_field('block_2_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_2_video_embed_code"); ?>'>
                         <?php if(get_field('block_2_video')): ?>
                             <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                                 <?php the_field('block_2_title'); ?>
                             </h2>
                         <?php else: ?>
@@ -130,7 +130,7 @@
                     <a href="<?php the_field('block_3_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_3_video_embed_code"); ?>'>
                         <?php if(get_field('block_3_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                                 <?php the_field('block_3_title'); ?>
                             </h2>
                         <?php else: ?>
@@ -150,7 +150,7 @@
                     <a href="<?php the_field('block_6_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_6_video_embed_code"); ?>'>
                         <?php if(get_field('block_6_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                                 <?php the_field('block_6_title'); ?>
                             </h2>
                         <?php else: ?>
@@ -175,7 +175,7 @@
                 <a href="<?php the_field('block_7_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_7_video_embed_code"); ?>'>
                     <?php if(get_field('block_7_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_7_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -195,7 +195,7 @@
                 <a href="<?php the_field('block_8_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_8_video_embed_code"); ?>'>
                     <?php if(get_field('block_8_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_8_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -213,7 +213,7 @@
                         <p><?php the_field('block_9_content'); ?></p>
                         <div class="jc_icon-arrow-down">
                             <a href="<?php the_field('block_4_link'); ?>">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
                                             .arrow-down-cls-1,.arrow-down-cls-3{
@@ -226,7 +226,7 @@
                                                 stroke:#0e173c;
                                             }
                                         </style>
-                                        <clipPath id="arrow-down-clip-path">
+                                        <clipPath>
                                             <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
                                         </clipPath>
                                     </defs>
@@ -252,7 +252,7 @@
                     <a href="<?php the_field('block_10_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_10_video_embed_code"); ?>'>
                         <?php if(get_field('block_10_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                                 <?php the_field('block_10_title'); ?>
                             </h2>
                         <?php else: ?>
@@ -272,7 +272,7 @@
                     <a href="<?php the_field('block_11_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_11_video_embed_code"); ?>'>
                         <?php if(get_field('block_11_video')): ?>
                             <h2 class="jc_play-button">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                                 <?php the_field('block_11_title'); ?>
                             </h2>
                         <?php else: ?>
@@ -296,7 +296,7 @@
                 <a href="<?php the_field('block_12_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_12_video_embed_code"); ?>'>
                     <?php if(get_field('block_12_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_12_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -316,7 +316,7 @@
                 <a href="<?php the_field('block_13_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_13_video_embed_code"); ?>'>
                     <?php if(get_field('block_13_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_13_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -339,7 +339,7 @@
                 <a href="<?php the_field('block_14_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_14_video_embed_code"); ?>'>
                     <?php if(get_field('block_14_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_14_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -359,7 +359,7 @@
                 <a href="<?php the_field('block_15_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_15_video_embed_code"); ?>'>
                     <?php if(get_field('block_15_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_15_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -377,7 +377,7 @@
                         <p><?php the_field('block_16_content'); ?></p>
                         <div class="jc_icon-arrow-down">
                             <a href="<?php the_field('block_16_link'); ?>">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
                                             .arrow-down-cls-1,.arrow-down-cls-3{
@@ -390,7 +390,7 @@
                                                 stroke:#0e173c;
                                             }
                                         </style>
-                                        <clipPath id="arrow-down-clip-path">
+                                        <clipPath>
                                             <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
                                         </clipPath>
                                     </defs>
@@ -413,7 +413,7 @@
                         <p><?php the_field('block_17_content'); ?></p>
                         <div class="jc_icon-arrow-down">
                             <a href="<?php the_field('block_17_link'); ?>">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
                                             .arrow-down-cls-1,.arrow-down-cls-3{
@@ -426,7 +426,7 @@
                                                 stroke:#0e173c;
                                             }
                                         </style>
-                                        <clipPath id="arrow-down-clip-path">
+                                        <clipPath>
                                             <rect class="arrow-down-cls-1" width="20.849" height="27.35"/>
                                         </clipPath>
                                     </defs>
@@ -456,7 +456,7 @@
                 <a href="<?php the_field('block_18_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_18_video_embed_code"); ?>'>
                     <?php if(get_field('block_18_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_18_title'); ?>
                         </h2>
                     <?php else: ?>
@@ -476,7 +476,7 @@
                 <a href="<?php the_field('block_19_link'); ?>" class="jc_overlay" data-embed='<?php the_field("block_19_video_embed_code"); ?>'>
                     <?php if(get_field('block_19_video')): ?>
                         <h2 class="jc_play-button">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg>
                             <?php the_field('block_19_title'); ?>
                         </h2>
                     <?php else: ?>

@@ -18,26 +18,26 @@
             <div class="jc_footer-social">
                 <ul>
                     <?php if(get_field('instagram_url','option')): ?>
-                        <li><a href="<?php the_field('instagram_url','option'); ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="<?php the_field('instagram_url','option'); ?>" title="Find us on Instagram"rel="noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></li>
                     <?php endif; ?>
                     <?php if(get_field('houzz_url','option')): ?>
-                        <li><a href="<?php the_field('houzz_url','option'); ?>" target="_blank"><i class="fab fa-houzz"></i></a></li>
+                        <li><a href="<?php the_field('houzz_url','option'); ?>" title="Find us on Houzz"rel="noreferrer" target="_blank"><i class="fab fa-houzz"></i></a></li>
                     <?php endif; ?>
                     <?php if(get_field('twitter_url','option')): ?>
-                        <li><a href="<?php the_field('twitter_url','option'); ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="<?php the_field('twitter_url','option'); ?>" title="Find us on Twitter" rel="noreferrer" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     <?php endif; ?>
                     <?php if(get_field('pinterest_url','option')): ?>
-                        <li><a href="<?php the_field('pinterest_url','option'); ?>" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="<?php the_field('pinterest_url','option'); ?>" title="Find us on Pinterest" rel="noreferrer" target="_blank"><i class="fab fa-pinterest"></i></a></li>
                     <?php endif; ?>
                     <?php if(get_field('facebook_url','option')): ?>
-                        <li><a href="<?php the_field('facebook_url','option'); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="<?php the_field('facebook_url','option'); ?>" title="Find us on Facebook" rel="noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                     <?php endif; ?>
                 </ul>
             </div>
             <div class="jc_footer-logos">
                 <ul>
-                    <li><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/placeholder-logo-one.png" alt="Logo"></a></li>
-                    <li><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/placeholder-logo-two.png" alt="Logo"></a></li>
+                    <li><a href="#" target="_blank" rel="noreferrer"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/placeholder-logo-one.png" alt="Logo"></a></li>
+                    <li><a href="#" target="_blank" rel="noreferrer"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/placeholder-logo-two.png" alt="Logo"></a></li>
                 </ul>
             </div>
         </div>
