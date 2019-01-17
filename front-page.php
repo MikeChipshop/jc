@@ -27,11 +27,11 @@
             <div class="jc_grid-100">
                 <div class="cat-e jc_grid-flex-content" id="block-4">
                     <div class="jc_fp-text-box jc_fp-news-box">
-                        <h2>News</h2>
-                        <h3><?php the_field('block_4_title'); ?></h3>
-                        <p><?php the_field('block_4_content'); ?></p>
-                        <div class="jc_icon-arrow-down">
-                            <a href="<?php the_field('block_4_link'); ?>">
+                        <a href="<?php the_field('block_4_link'); ?>">
+                            <h2>News</h2>
+                            <h3><?php the_field('block_4_title'); ?></h3>
+                            <p><?php the_field('block_4_content'); ?></p>
+                            <div class="jc_icon-arrow-down">                            
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
@@ -55,19 +55,19 @@
                                         <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
                                     </g>
                                 </svg>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="jc_grid-100">
                 <div class="cat-f jc_grid-flex-content" id="block-5">
                     <div class="jc_fp-text-box link">
-                        <h2>Link</h2>
-                        <h3><?php the_field('block_5_title'); ?></h3>
-                        <p><?php the_field('block_5_content'); ?></p>
-                        <div class="jc_icon-arrow-down">
-                            <a href="<?php the_field('block_5_link'); ?>">
+                        <a href="<?php the_field('block_5_link'); ?>">
+                            <h2>Link</h2>
+                            <h3><?php the_field('block_5_title'); ?></h3>
+                            <p><?php the_field('block_5_content'); ?></p>
+                            <div class="jc_icon-arrow-down">                            
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
@@ -91,8 +91,8 @@
                                         <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
                                     </g>
                                 </svg>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 </div>
@@ -207,12 +207,11 @@
         <div class="jc_grid-33">
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-h jc_grid-flex-content" id="block-9">
-                    
-                <div class="jc_fp-text-box jc_fp-news-box awards">
-                        <h2><?php the_field('block_9_title'); ?></h2>
-                        <p><?php the_field('block_9_content'); ?></p>
-                        <div class="jc_icon-arrow-down">
-                            <a href="<?php the_field('block_4_link'); ?>">
+                    <div class="jc_fp-text-box jc_fp-news-box awards">
+                        <a href="<?php the_field('block_4_link'); ?>">
+                            <h2><?php the_field('block_9_title'); ?></h2>
+                            <p><?php the_field('block_9_content'); ?></p>
+                            <div class="jc_icon-arrow-down">
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
@@ -236,9 +235,9 @@
                                         <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
                                     </g>
                                 </svg>
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="jc_grid-100 jc_grid-flex">
@@ -372,11 +371,12 @@
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-g jc_grid-flex-content" id="block-16">
                     <div class="jc_fp-text-box">
+                        <a href="<?php the_field('block_16_link'); ?>">
                         <h2>Contact</h2>
                         <h3><?php the_field('block_16_title'); ?></h3>
                         <p><?php the_field('block_16_content'); ?></p>
                         <div class="jc_icon-arrow-down">
-                            <a href="<?php the_field('block_16_link'); ?>">
+                            
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
@@ -400,19 +400,19 @@
                                         <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
                                     </g>
                                 </svg>
-                            </a>
                         </div>
+                                        </a>
                     </div>
                 </div>
             </div>
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-e jc_grid-flex-content" id="block-17">
                     <div class="jc_fp-text-box jc_fp-news-box">
-                        <h2>News</h2>
-                        <h3><?php the_field('block_17_title'); ?></h3>
-                        <p><?php the_field('block_17_content'); ?></p>
-                        <div class="jc_icon-arrow-down">
-                            <a href="<?php the_field('block_17_link'); ?>">
+                        <a href="<?php the_field('block_17_link'); ?>">
+                            <h2>News</h2>
+                            <h3><?php the_field('block_17_title'); ?></h3>
+                            <p><?php the_field('block_17_content'); ?></p>
+                            <div class="jc_icon-arrow-down">
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
                                         <style>
@@ -436,8 +436,8 @@
                                         <line class="arrow-down-cls-3" x1="10.4438" y1="-0.0006" x2="10.4438" y2="26.9474"/>
                                     </g>
                                 </svg>
-                            </a>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>

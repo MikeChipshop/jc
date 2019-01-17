@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="jc_footer-details">
-                    <span>&copy; Jo Cowen Architects Ltd. Co. No. 8754147. Vat No. 184 1989 65.</span>
+                    <span><?php the_field('footer_company_notice','option'); ?></span>
                     <ul><?php wp_nav_menu( array('theme_location' => 'footer_menu' )); ?></ul>
             </div>
         </div>
@@ -35,10 +35,26 @@
                 </ul>
             </div>
             <div class="jc_footer-logos">
-                <ul>
-                    <li><a href="#" target="_blank" rel="noreferrer"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/placeholder-logo-one.png" alt="Logo"></a></li>
-                    <li><a href="#" target="_blank" rel="noreferrer"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/placeholder-logo-two.png" alt="Logo"></a></li>
-                </ul>
+                <?php if( have_rows('footer_logos','option') ): ?>                    
+                    <ul>
+                        <?php while ( have_rows('footer_logos','option') ) : the_row(); ?>
+                            <li>
+                                <?php
+                                    $attachment_id = get_sub_field('footer_logos_image');
+                                    $size = "full";
+                                    $image = wp_get_attachment_image_src( $attachment_id, $size );
+                                ?>
+                                <?php if(get_sub_field('footer_logos_link')): ?>
+                                    <a href="<?php the_sub_field('footer_logos_link'); ?>" target="_blank" rel="noreferrer">
+                                <?php endif; ?>
+                                    <img src="<?php echo $image[0]; ?>" alt="">
+                                <?php if(get_sub_field('footer_logos_link')): ?>
+                                    </a>
+                                <?php endif; ?>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
     </div>

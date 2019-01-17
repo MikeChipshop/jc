@@ -231,6 +231,12 @@ body {
     color: #595358;
     text-decoration: none;
     letter-spacing: 1px;
+    -webkit-transition:opacity .4s ease-in-out;
+    transition:opacity .4s ease-in-out;
+    opacity:1;
+}
+.jc_global-header nav > ul > li:hover > a {
+    opacity:.4;
 }
 .jc_global-header li::after {
     content: "|";
@@ -245,8 +251,7 @@ body {
 .jc_global-header ul.sub-menu {
     background:rgba(27,29,59,.9);
     position: absolute;
-    top: 16px;
-    left: -16px;
+    top: 20px;
     z-index: 99;
     padding: 10px 0px;
     z-index:9;
@@ -254,6 +259,7 @@ body {
     display:none;
     -webkit-transition: opacity .4s ease-in-out;
     transition: opacity .4s ease-in-out;
+    min-width: 180px;
 }
 .jc_global-header ul li:hover ul.sub-menu {
     display:block;
@@ -433,6 +439,16 @@ body {
     padding: 20px 45px 20px 30px;
     color: #1b1d3b;
     font-weight: 400;
+}
+.jc_fp-text-box a {
+    color: #1b1d3b;
+    text-decoration: none;
+}
+.jc_fp-text-box.link a {
+    color: #ffffff;
+}
+.jc_fp-text-box a:hover .jc_icon-arrow-down {
+    bottom:10px;
 }
 .jc_fp-text-box.link {
     background-color: #393939;
@@ -670,6 +686,8 @@ body {
     position:absolute;
     right:20px;
     bottom:20px;
+    -webkit-transition:bottom .2s ease-in-out;
+    transition:bottom .2s ease-in-out;
 }
 .jc_icon-arrow-down a {
     display:block;
@@ -1098,10 +1116,20 @@ body {
     padding-bottom:20px;
 }
 .jc_news-archive-icon {
-    text-align: right;
-    font-size: 34px;
+    width: 100%;
+    max-width: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: bottom .2s ease-in-out;
+    transition: bottom .2s ease-in-out;
 }
-
+.jc_news-archive-icon .arrow-down-cls-3 {
+    stroke:#ffffff;
+}
+.jc_news-archive-item a:hover .jc_news-archive-icon {
+    bottom:10px;
+}
 /* Taxonomy Landing */
 
 .jc_taxonomy-grid .jc_news-archive-overlay h2,
@@ -1441,6 +1469,8 @@ textarea.wpcf7-not-valid {
 .jc_global-footer a {
     color:#797979;
     text-decoration:none;
+    -webkit-transition:color .4s ease-in-out;
+    transition:color .4s ease-in-out;
 }
 .jc_global-footer a:hover {
     color:#cbcbcb;
@@ -1498,6 +1528,12 @@ textarea.wpcf7-not-valid {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
             justify-content: flex-end;
+}
+.jc_footer-logos img {
+    height:50px;
+    display:block;
+    width:auto;
+    margin-left:10px;
 }
 
 @media only screen and (max-width : 800px) {
