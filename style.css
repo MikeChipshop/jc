@@ -181,7 +181,7 @@ body {
 ------------------------------------------------ */
 
 .jc_global-header {
-    padding:20px;
+    padding:20px 20px 10px 20px;
 }
 .jc_global-header .jc_wrap {
     display:-webkit-box;
