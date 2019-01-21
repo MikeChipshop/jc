@@ -64,7 +64,7 @@
 					        <button id="searchsubmit">Search</button>
 				        </form>
                     </div>
-                    <a href="#"><i class="fal fa-search fa-flip-horizontal"></i></a>
+                    <a href="#" class="jc_toggle-search"><i class="fal fa-search fa-flip-horizontal"></i></a>
                 </li>
             </ul>
         </nav>
