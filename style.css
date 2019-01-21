@@ -214,10 +214,10 @@ body {
 
 .jc_header-logo {
     width:100%;
-    max-width:350px;
 }
 .jc_header-logo img {
     width:100%;
+    max-width:350px;
 }
 .jc_menu-toggle {
     display:none;
@@ -823,11 +823,24 @@ body {
     background-color: #1b1d3b;
     color: #fff;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     width: 30px;
     height: 30px;
     border: 1px solid #fff;
     cursor:pointer;
+    position: absolute;
+    right: 5px;
+    font-size: 20px;
+    top: 0px;
+    border: none;
+    background-color: #fff;
+    color: #fff;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+.jc_close-video svg {
+    width: 100%;
 }
 
 /* ------------------------------------------------
@@ -1115,6 +1128,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: 300;
+    text-align: center;
+    line-height: 1.4;
 }
 .jc_hero-overlay h1 strong {
     font-weight:500;
@@ -1521,15 +1536,15 @@ body {
 }
 .jc_close-contact {
     position: absolute;
-    right: 20px;
+    right: 10px;
     font-size: 20px;
-    top: 20px;
-    background-color: #cccccc;
+    top: 10px;
+    background-color: #fff;
     color: #0d153b;
-    width: 30px;
+    width: 25px;
     height: 30px;
-    border: 1px solid #fff;
     cursor: pointer;
+    border: none;
 }
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing,
@@ -1731,6 +1746,9 @@ textarea.wpcf7-not-valid {
                 -webkit-justify-content:center;
                 justify-content:center;
     }
+    .jc_footer-social {
+        padding-bottom:20px;
+    }
 
 
     /* Nav */
@@ -1842,6 +1860,25 @@ textarea.wpcf7-not-valid {
     }
     .jc_contact-wrap .jc_contact-wrap-cont > div {
         position:static;
+    }
+    .jc_popup-form-wrap input[type="submit"] {
+        float:none;
+    }
+    div.wpcf7-response-output {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+        left: 0px;
+        border: none;
+        text-align: center;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 20px 0px;
+        padding: 0px;
+    }
+    .jc_square-grid.jc_related-grid .jc_news-archive-overlay h2 {
+        opacity:1;
     }
 
 }

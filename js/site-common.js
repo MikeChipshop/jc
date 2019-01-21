@@ -52,4 +52,10 @@ jQuery(document).ready(function( $ ) {
         $( "body" ).toggleClass("jc_search-open");
     });
 
+    var wpcf7Elm = document.querySelector( '.wpcf7' );
+
+    wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+        setTimeout(function(){ $( "body" ).removeClass("jc_contact-open"); }, 4000);
+    }, false );
+
 });
