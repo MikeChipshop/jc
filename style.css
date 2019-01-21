@@ -1562,6 +1562,17 @@ textarea.wpcf7-not-valid {
         -ms-flex-pack:center;
                 justify-content:center;
     }
+    .jc_grid-flex-content a.jc_overlay {
+        opacity:1;
+        height:100%;
+        background:none;
+    }
+    .jc_grid-flex-content a.jc_overlay h2 {
+        width: 100%;
+        margin-top: auto;
+        background: rgba(27,29,59,.65);
+        padding: 10px;
+    }
 
     /* Nav */
     .jc_global-header {
