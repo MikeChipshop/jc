@@ -371,7 +371,7 @@
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-g jc_grid-flex-content" id="block-16">
                     <div class="jc_fp-text-box">
-                        <a href="<?php the_field('block_16_link'); ?>">
+                        <a href="#" class="jc_contact-toggle">
                         <h2>Contact</h2>
                         <h3><?php the_field('block_16_title'); ?></h3>
                         <p><?php the_field('block_16_content'); ?></p>
