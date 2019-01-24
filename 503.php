@@ -9,7 +9,6 @@
 <meta name="msapplication-TileColor" content="#1b1e3c">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="https://use.typekit.net/zvy6nko.css">
-<script defer="" src="http://beta.jocowenarchitects.com/wp-content/themes/jocowen/js/all.js"></script>
 <title>Home - Jo Cowen Architects</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v9.5 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -19,33 +18,28 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Home - Jo Cowen Architects">
 <meta property="og:description" content="Block Block Block &nbsp; Block Block">
-<meta property="og:url" content="http://beta.jocowenarchitects.com/">
+<meta property="og:url" content="https://jocowenarchitects.com/">
 <meta property="og:site_name" content="Jo Cowen Architects">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:description" content="Block Block Block &nbsp; Block Block">
 <meta name="twitter:title" content="Home - Jo Cowen Architects">
 <meta name="twitter:site" content="@JoCowenArch">
-<meta name="twitter:image" content="http://jocowenarchitects.com/wp-content/uploads/2018/12/004_JCA_113MunsterRoad_01-1024x682.jpg">
+<meta name="twitter:image" content="https://jocowenarchitects.com/wp-content/uploads/2018/12/004_JCA_113MunsterRoad_01-1024x682.jpg">
 <meta name="twitter:creator" content="@JoCowenArch">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"http://beta.jocowenarchitects.com/#website","url":"http://beta.jocowenarchitects.com/","name":"Jo Cowen Architects","potentialAction":{"@type":"SearchAction","target":"http://beta.jocowenarchitects.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"http://beta.jocowenarchitects.com/","sameAs":["https://www.facebook.com/JCArchitects/","https://www.instagram.com/jo_cowen_architects_/","https://www.pinterest.co.uk/jocowena/","https://twitter.com/JoCowenArch"],"@id":"http://beta.jocowenarchitects.com/#organization","name":"Jo Cowen Architects","logo":"http://jc.mwddev.uk/wp-content/uploads/2019/01/JC-FAVICON.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://jocowenarchitects.com/#website","url":"https://jocowenarchitects.com/","name":"Jo Cowen Architects","potentialAction":{"@type":"SearchAction","target":"http://beta.jocowenarchitects.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://jocowenarchitects.com/","sameAs":["https://www.facebook.com/JCArchitects/","https://www.instagram.com/jo_cowen_architects_/","https://www.pinterest.co.uk/jocowena/","https://twitter.com/JoCowenArch"],"@id":"http://beta.jocowenarchitects.com/#organization","name":"Jo Cowen Architects","logo":"http://jc.mwddev.uk/wp-content/uploads/2019/01/JC-FAVICON.png"}</script>
 <!-- / Yoast SEO plugin. -->
 
-<link rel="stylesheet" id="wp-block-library-css" href="http://beta.jocowenarchitects.com/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="wp-block-library-theme-css" href="http://beta.jocowenarchitects.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="http://beta.jocowenarchitects.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1" type="text/css" media="all">
+
 <link rel="stylesheet" id="font-css-css" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C700&amp;ver=5.0.3" type="text/css" media="screen">
-<link rel="stylesheet" id="main-css-css" href="http://beta.jocowenarchitects.com/wp-content/themes/jocowen/style.css?ver=1548354195" type="text/css" media="screen">
-<link rel="stylesheet" id="lightslider-css-css" href="http://beta.jocowenarchitects.com/wp-content/themes/jocowen/css/lightslider.min.css?ver=5.0.3" type="text/css" media="screen">
-<script type="text/javascript" src="http://beta.jocowenarchitects.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="http://beta.jocowenarchitects.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-<link rel="https://api.w.org/" href="http://beta.jocowenarchitects.com/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://beta.jocowenarchitects.com/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://beta.jocowenarchitects.com/wp-includes/wlwmanifest.xml">
+<link rel="stylesheet" id="main-css-css" href="https://jocowenarchitects.com/wp-content/themes/jocowen/style.css?ver=1548354195" type="text/css" media="screen">
+<link rel="https://api.w.org/" href="https://jocowenarchitects.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jocowenarchitects.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://jocowenarchitects.com/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 5.0.3">
-<link rel="shortlink" href="http://beta.jocowenarchitects.com/">
-<link rel="alternate" type="application/json+oembed" href="http://beta.jocowenarchitects.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbeta.jocowenarchitects.com%2F">
-<link rel="alternate" type="text/xml+oembed" href="http://beta.jocowenarchitects.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbeta.jocowenarchitects.com%2F&amp;format=xml">
+<link rel="shortlink" href="https://jocowenarchitects.com/">
+<link rel="alternate" type="application/json+oembed" href="https://jocowenarchitects.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbeta.jocowenarchitects.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://jocowenarchitects.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbeta.jocowenarchitects.com%2F&amp;format=xml">
 
 </head>
 <body class="503" style="overflow:hidden;">
