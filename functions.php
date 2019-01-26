@@ -1,25 +1,5 @@
 <?php
 
-if ( ! function_exists( 'twentynineteen_setup' ) ) :
-    function twentynineteen_setup() {
-        // Add support for Block Styles
-		add_theme_support( 'wp-block-styles' );
-		// Add support for full and wide align images.
-		add_theme_support( 'align-wide' );
-		// Add support for editor styles
-		add_theme_support( 'editor-styles' );
-		// Enqueue editor styles
-		add_editor_style( 'style-editor.css' );
-    }
-endif;
-
-add_action( 'after_setup_theme', 'twentynineteen_setup' );
-
-function sbh_guten_block_editor_assets() {
-	wp_enqueue_style('sbh-editor-style', get_stylesheet_directory_uri() . "/css/style-editor.css", array(),	'1.0');
-    wp_enqueue_style( 'sbh-font-css', 'https://fonts.googleapis.com/css?family=Poppins:400,500,700','','', 'screen' );
-}
-add_action('enqueue_block_editor_assets', 'sbh_guten_block_editor_assets');
 
 /***************************************************
 / Add Featured Thumbs
@@ -36,6 +16,9 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'team', 600, 400, true );
 	add_image_size( 'square', 600, 600, true );
     add_image_size( 'team-divider',1880 , 9999, true );
+    add_image_size( '1-wide',640 , 9999, false );
+    add_image_size( '2-wide',1300 , 9999, false );
+    add_image_size( '3-wide',1910 , 9999, false );
 }
 
 /****************************************************
@@ -45,13 +28,11 @@ function to_load_scripts() {
 
 	wp_register_script( 'site-common', get_template_directory_uri() . '/js/site-common.js', array('jquery'),'null',true  );
 	wp_register_script( 'lightslider', get_template_directory_uri() . '/js/lightslider.min.js', array('jquery'),time(),true  );
-	wp_register_style( 'font-css', 'https://fonts.googleapis.com/css?family=Poppins:400,500,700','','', 'screen' );
 	wp_register_style( 'main-css', get_template_directory_uri() . '/style.css','',time(), 'screen' );
 	wp_register_style( 'lightslider-css', get_template_directory_uri() . '/css/lightslider.min.css','','', 'screen' );
 
 	wp_enqueue_script( 'site-common' );
 	wp_enqueue_script( 'lightslider' );
-	wp_enqueue_style( 'font-css' );
 	wp_enqueue_style( 'main-css' );
 	wp_enqueue_style( 'lightslider-css' );
 }
@@ -253,3 +234,9 @@ if(function_exists('acf_add_options_page')) {
     acf_add_options_sub_page('Misc');
 
 }
+
+function remove_gutenberg_styles() {
+    wp_dequeue_style( 'wp-block-library' );
+}
+
+add_action( 'wp_enqueue_scripts', 'remove_gutenberg_styles', 100 );

@@ -23,9 +23,6 @@ clear:both}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav
 /* ------------------------------------------------
 Fonts In Use
 
-Museo Sans == REMOVED ==
-font-family: museo-sans, sans-serif; 100 | 300 | 500 | 700
-
 Proxima Nova
 font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 
@@ -320,6 +317,14 @@ body {
 .jc_search-open .jc_header-search-wrap input[type="search"] {
     width:150px;
 }
+.jc_header-search-wrap label {
+    position:absolute;
+    text-indent:-9999999px;
+}
+.jc_toggle-search span {
+    position:absolute;
+    text-indent:-99999px;
+}
 .jc_header-search-wrap input[type="search"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #cbcacb;
     font-weight: 300;
@@ -360,7 +365,7 @@ body {
     text-align:center;
     border:4px solid #ffffff;
     position:relative;
-    background-color:#1b1d3b;
+    background-color:#f9f9f9;
 }
 .jc_grid-flex-content img {
     width:100%;

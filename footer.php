@@ -18,10 +18,10 @@
             <div class="jc_footer-social">
                 <ul>
                     <?php if(get_field('instagram_url','option')): ?>
-                        <li><a href="<?php the_field('instagram_url','option'); ?>" title="Find us on Instagram"rel="noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="<?php the_field('instagram_url','option'); ?>" title="Find us on Instagram" rel="noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></li>
                     <?php endif; ?>
                     <?php if(get_field('houzz_url','option')): ?>
-                        <li><a href="<?php the_field('houzz_url','option'); ?>" title="Find us on Houzz"rel="noreferrer" target="_blank"><i class="fab fa-houzz"></i></a></li>
+                        <li><a href="<?php the_field('houzz_url','option'); ?>" title="Find us on Houzz" rel="noreferrer" target="_blank"><i class="fab fa-houzz"></i></a></li>
                     <?php endif; ?>
                     <?php if(get_field('twitter_url','option')): ?>
                         <li><a href="<?php the_field('twitter_url','option'); ?>" title="Find us on Twitter" rel="noreferrer" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -42,12 +42,13 @@
                                 <?php
                                     $attachment_id = get_sub_field('footer_logos_image');
                                     $size = "full";
+                                    $alt_text = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true);
                                     $image = wp_get_attachment_image_src( $attachment_id, $size );
                                 ?>
                                 <?php if(get_sub_field('footer_logos_link')): ?>
                                     <a href="<?php the_sub_field('footer_logos_link'); ?>" target="_blank" rel="noreferrer">
                                 <?php endif; ?>
-                                    <img src="<?php echo $image[0]; ?>" alt="">
+                                    <img src="<?php echo $image[0]; ?>" alt="<?php echo $alt_text ?>">
                                 <?php if(get_sub_field('footer_logos_link')): ?>
                                     </a>
                                 <?php endif; ?>
@@ -91,7 +92,7 @@
             </div>
             <div class="jc_contact-wrap-right">
                 <button class="jc_close-contact jc_contact-toggle">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
                     <style type="text/css">
                         .off-cross{fill:#1B1E3C;}
                     </style>
@@ -110,7 +111,7 @@
     <div class="jc_fp-video-pop-up-wrap">
         <div class="jc_responsive-video"></div>
         <button class="jc_close-video">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
                 <style type="text/css">
                     .off-cross{fill:#1B1E3C;}
                 </style>
@@ -120,5 +121,15 @@
     </div>
 </div>
 <?php wp_footer(); ?>
+<script>
+    window.addEventListener('load', function(){
+    var allimages= document.getElementsByTagName('img');
+    for (var i=0; i<allimages.length; i++) {
+        if (allimages[i].getAttribute('data-src')) {
+            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+        }
+    }
+}, false)
+</script>
 </body>
 </html>
