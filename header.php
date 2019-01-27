@@ -46,14 +46,91 @@
 <?php endif; ?>
 <header class="jc_global-header" id="jc_header">
     <div class="jc_wrap">
-        <div class="jc_header-logo">
-            <a href="<?php bloginfo('url'); ?>">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/jc_logo.svg" alt="<?php bloginfo('name'); ?>">
-            </a>
-            <div class="jc_menu-toggle">
-                <i class="far fa-bars"></i>
+        <?php if(is_singular( 'project' )): ?>
+            <div class="jc_projects-header">
+                <div class="jc_header-logo">
+                    <a href="<?php bloginfo('url'); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo_initials.svg" alt="<?php bloginfo('name'); ?>">
+                    </a>
+                    <div class="jc_breadcrumbs">
+                        <ul>
+                            <li><a href="https://jocowenarchitects.com/projects">All Projects</a></li>
+                            <?php
+                                $post = get_post();
+                                $term_list = wp_get_post_terms($post->ID, 'project-category');
+                                $term_list = wp_list_filter(
+                                    $term_list, array(
+                                        'slug'=>'all-projects',
+                                    ),
+                                    'NOT'
+                                );
+                                $term_list = wp_list_filter(
+                                $term_list, array(
+                                    'slug'=>'latest-featured',
+                                ),
+                                    'NOT'
+                                );
+
+                                //'slug'=>'latest-featured'
+                            ?>
+                            <?php foreach ( $term_list as $term ): ?>
+                                <li>
+                                    <a href="https://jocowenarchitects.com/<?php echo $term->slug; ?>">
+                                        <?php echo $term->name; ?>
+                                    </a>
+                                </li>
+                            <?php break; endforeach; ?>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        </ul>
+                    </div>
+                    <div class="jc_menu-toggle">
+                        <i class="far fa-bars"></i>
+                    </div>
+                </div>
             </div>
-        </div>
+        <?php elseif(is_page( 'projects' )): ?>
+            <div class="jc_projects-header">
+                <div class="jc_header-logo">
+                    <a href="<?php bloginfo('url'); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo_initials.svg" alt="<?php bloginfo('name'); ?>">
+                    </a>
+                    <div class="jc_breadcrumbs">
+                        <ul>
+                            <li><a href="https://jocowenarchitects.com/projects">All Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="jc_menu-toggle">
+                        <i class="far fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        <?php elseif( $post->post_parent == '1039'): ?>
+            <div class="jc_projects-header">
+                <div class="jc_header-logo">
+                    <a href="<?php bloginfo('url'); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo_initials.svg" alt="<?php bloginfo('name'); ?>">
+                    </a>
+                    <div class="jc_breadcrumbs">
+                        <ul>
+                            <li><a href="https://jocowenarchitects.com/projects">All Projects</a></li>
+                            <li><a href="#"><?php the_title(); ?></a></li>
+                        </ul>
+                    </div>
+                    <div class="jc_menu-toggle">
+                        <i class="far fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        <?php else: ?>
+            <div class="jc_header-logo">
+                <a href="<?php bloginfo('url'); ?>">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/jc_logo.svg" alt="<?php bloginfo('name'); ?>">
+                </a>
+                <div class="jc_menu-toggle">
+                    <i class="far fa-bars"></i>
+                </div>
+            </div>
+        <?php endif; ?>
         <nav>
             <ul>
                 <?php wp_nav_menu( array('theme_location' => 'main_menu' )); ?>
