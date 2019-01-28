@@ -23,7 +23,7 @@
                     <?php while ( have_rows('home_slider') ) : the_row(); ?>
                         <?php
                             $attachment_id = get_sub_field('hero_slide_image');
-                            $size = "full";
+                            $size = "3-wide";
                             $image = wp_get_attachment_image_src( $attachment_id, $size );
                         ?>
                         <div class="jc_home-hero-slide" style="background: #fff url(<?php echo $image[0]; ?>) no-repeat center center;background-size: cover;">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-        <?php elseif( $post->post_parent == '1039'): ?>
+        <?php elseif( $post->post_parent == '1039' && !is_404()): ?>
             <div class="jc_projects-header">
                 <div class="jc_header-logo">
                     <a href="<?php bloginfo('url'); ?>">

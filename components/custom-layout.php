@@ -8,7 +8,7 @@
                                 <div class="jc_rte-image">
                                     <?php
                                         $attachment_id = get_sub_field('c1_single_column_image');
-                                        $size = "full";
+                                        $size = "3-wide";
                                         $image = wp_get_attachment_image_src( $attachment_id, $size );
                                     ?>
                                     <img src="<?php echo $image[0]; ?>" alt="">
@@ -33,7 +33,7 @@
                                         <div class="jc_rte-image">
                                             <?php
                                                 $attachment_id = get_sub_field('c2_column_one_content_image');
-                                                $size = "full";
+                                                $size = "2-wide";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
@@ -59,7 +59,7 @@
                                         <div class="jc_rte-image">
                                             <?php
                                                 $attachment_id = get_sub_field('c2_column_two_content_image');
-                                                $size = "full";
+                                                $size = "2-wide";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
@@ -88,7 +88,7 @@
                                         <div class="jc_rte-image">
                                             <?php
                                                 $attachment_id = get_sub_field('c3_column_one_content_image');
-                                                $size = "full";
+                                                $size = "1-wide";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
@@ -114,7 +114,7 @@
                                         <div class="jc_rte-image">
                                             <?php
                                                 $attachment_id = get_sub_field('c3_column_two_content_image');
-                                                $size = "full";
+                                                $size = "1-wide";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
@@ -140,7 +140,7 @@
                                         <div class="jc_rte-image">
                                             <?php
                                                 $attachment_id = get_sub_field('c3_column_three_content_image');
-                                                $size = "full";
+                                                $size = "1-wide";
                                                 $image = wp_get_attachment_image_src( $attachment_id, $size );
                                             ?>
                                             <img src="<?php echo $image[0]; ?>" alt="">
