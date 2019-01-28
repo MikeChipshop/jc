@@ -55,6 +55,9 @@
                 </li>
             <?php endwhile; ?>
         </ul>
+        <nav class="jc_pagination">
+            <?php  miniman_paging_nav(); ?>
+        </nav>
     <?php endif; ?>
 </div>
 <?php get_footer(); ?>
