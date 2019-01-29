@@ -21,10 +21,41 @@
 </div>
 <div class="jc_wrap">
     <?php
+        $relatedtax = "";
+        $post = get_post();
+        $term_list = wp_get_post_terms($post->ID, 'project-category');
+        $term_list = wp_list_filter(
+            $term_list, array(
+                'slug'=>'all-projects',
+            ),
+            'NOT'
+        );
+        $term_list = wp_list_filter(
+            $term_list, array(
+                'slug'=>'latest-featured',
+            ),
+            'NOT'
+        );
+
+            foreach ( $term_list as $term ):
+                $relatedtax = $term->name;
+             break; endforeach;
+
+
+    ?>
+
+    <?php
 		$projrandargs = array(
-			'post_type' => 'project',
-            'posts_per_page' => 3,
-            'orderby' => 'rand'
+			'post_type'         => 'project',
+            'posts_per_page'    => 3,
+            'orderby'           => 'rand',
+            'tax_query' => array(
+                array(
+                    'taxonomy'          => 'project-category',
+                    'field'             => 'slug',
+                    'terms'             => $relatedtax
+                ),
+            ),
 		);
     ?>
     <?php $projrandloop = new WP_Query( $projrandargs ); ?>

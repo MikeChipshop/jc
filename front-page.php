@@ -22,6 +22,11 @@
                             <h2><?php the_field('block_1_title'); ?></h2>
                         <?php endif; ?>
                     </a>
+                    <?php if(get_field('block_1_video')): ?>
+                        <?php if(get_field('block_1_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_1_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="jc_grid-100">
@@ -117,6 +122,11 @@
                             <h2><?php the_field('block_2_title'); ?></h2>
                         <?php endif; ?>
                     </a>
+                    <?php if(get_field('block_2_video')): ?>
+                        <?php if(get_field('block_2_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_2_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="jc_grid-50">
@@ -137,6 +147,11 @@
                             <h2><?php the_field('block_3_title'); ?></h2>
                         <?php endif; ?>
                     </a>
+                    <?php if(get_field('block_3_video')): ?>
+                        <?php if(get_field('block_3_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_3_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="jc_grid-100">
@@ -157,6 +172,11 @@
                             <h2><?php the_field('block_6_title'); ?></h2>
                         <?php endif; ?>
                     </a>
+                    <?php if(get_field('block_6_video')): ?>
+                        <?php if(get_field('block_6_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_6_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -182,6 +202,11 @@
                         <h2><?php the_field('block_7_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_7_video')): ?>
+                    <?php if(get_field('block_7_video_custom_title')): ?>
+                        <h1 class="jc_custom-video-title"><?php the_field('block_7_video_custom_title'); ?></h1>
+                    <?php endif; ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="jc_grid-33">
@@ -202,6 +227,11 @@
                         <h2><?php the_field('block_8_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_8_video')): ?>
+                    <?php if(get_field('block_8_video_custom_title')): ?>
+                        <h1 class="jc_custom-video-title"><?php the_field('block_8_video_custom_title'); ?></h1>
+                    <?php endif; ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="jc_grid-33">
@@ -210,7 +240,12 @@
                     <div class="jc_fp-text-box jc_fp-news-box awards">
                         <a href="<?php the_field('block_9_link'); ?>" title="<?php the_field('block_9_title'); ?>">
                             <h2><?php the_field('block_9_title'); ?></h2>
-                            <p><?php the_field('block_9_content'); ?></p>
+                            <?php
+                                $attachment_id = get_field('block_9_content');
+                                $size = "full";
+                                $image = wp_get_attachment_image_src( $attachment_id, $size );
+                            ?>
+                            <img src="<?php echo $image[0]; ?>" alt="Jo Cowen Architects Awards">
                             <div class="jc_icon-arrow-down">
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.849 27.35">
                                     <defs>
@@ -258,6 +293,11 @@
                             <h2><?php the_field('block_10_title'); ?></h2>
                         <?php endif; ?>
                     </a>
+                    <?php if(get_field('block_10_video')): ?>
+                        <?php if(get_field('block_10_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_10_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="jc_grid-100 jc_grid-flex">
@@ -278,6 +318,11 @@
                             <h2><?php the_field('block_11_title'); ?></h2>
                         <?php endif; ?>
                     </a>
+                    <?php if(get_field('block_11_video')): ?>
+                        <?php if(get_field('block_11_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_11_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -302,6 +347,11 @@
                         <h2><?php the_field('block_12_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_12_video')): ?>
+                        <?php if(get_field('block_12_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_12_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
             </div>
         </div>
         <div class="jc_grid-33">
@@ -322,6 +372,11 @@
                         <h2><?php the_field('block_13_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_13_video')): ?>
+                        <?php if(get_field('block_13_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_13_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
             </div>
         </div>
     </div>
@@ -345,6 +400,11 @@
                         <h2><?php the_field('block_14_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_14_video')): ?>
+                        <?php if(get_field('block_14_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_14_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
             </div>
         </div>
         <div class="jc_grid-33">
@@ -365,6 +425,11 @@
                         <h2><?php the_field('block_15_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_15_video')): ?>
+                        <?php if(get_field('block_15_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_15_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
             </div>
         </div>
         <div class="jc_grid-33">
@@ -463,6 +528,11 @@
                         <h2><?php the_field('block_18_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_18_video')): ?>
+                        <?php if(get_field('block_18_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_18_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
             </div>
         </div>
         <div class="jc_grid-66">
@@ -483,6 +553,11 @@
                         <h2><?php the_field('block_19_title'); ?></h2>
                     <?php endif; ?>
                 </a>
+                <?php if(get_field('block_19_video')): ?>
+                        <?php if(get_field('block_19_video_custom_title')): ?>
+                            <h1 class="jc_custom-video-title"><?php the_field('block_19_video_custom_title'); ?></h1>
+                        <?php endif; ?>
+                    <?php endif; ?>
             </div>
         </div>
     </div>
