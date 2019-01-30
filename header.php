@@ -12,6 +12,7 @@
 </script>
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://player.vimeo.com/api/player.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,7 +42,6 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
-            <button><img src="<?php bloginfo('stylesheet_directory'); ?>/img/down-arrow.svg"></button>
         </div>
     <?php else: ?>
         <div class="jc_home-hero-video">
@@ -49,7 +49,7 @@
                 <iframe src="https://player.vimeo.com/video/<?php the_field('home_video_id'); ?>?background=1&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jo Cowen Intro Video"></iframe>
             </div>
             <h1><?php the_field('home_video_title'); ?></h1>
-            <a href="#" class="jc_scroll"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.85 27.35"><defs><style>.cls-1{fill:#ffffff;}</style></defs><title>Artboard 1</title><polyline class="cls-1" points="9.94 0 9.94 25.45 0.71 16.21 0 16.92 9.94 26.86 9.94 26.94 10.02 26.94 10.42 27.35 10.83 26.94 10.94 26.94 10.94 26.83 20.85 16.92 20.14 16.21 10.94 25.41 10.94 0"/></svg></a>
+            <a href="#" class="jc_scroll"></a>
         </div>
     <?php endif; ?>
 <?php endif; ?>
@@ -79,8 +79,6 @@
                                 ),
                                     'NOT'
                                 );
-
-                                //'slug'=>'latest-featured'
                             ?>
                             <?php foreach ( $term_list as $term ): ?>
                                 <li>

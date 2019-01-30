@@ -131,5 +131,15 @@
     }
 }, false)
 </script>
+
+<script>
+    var iframe = document.querySelector('.jc_home-hero-video iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.on('play', function() {
+      console.log('Played the video');
+      document.body.classList.add("vid-loaded");
+    });
+  </script>
 </body>
 </html>

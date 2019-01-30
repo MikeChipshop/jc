@@ -73,6 +73,16 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 /* Video */
 .jc_home-hero-video {
     position:relative;
+    background-color: #1b1e3c;
+}
+.jc_home-hero-video-container {
+    opacity:0;
+    -webkit-transition:opacity 2s ease-in-out;
+    -o-transition:opacity 2s ease-in-out;
+    transition:opacity 2s ease-in-out;
+}
+.vid-loaded .jc_home-hero-video-container {
+    opacity:1;
 }
 .jc_home-hero-video-container {
     position: relative;
@@ -108,7 +118,26 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
     letter-spacing: 2px;
     font-weight: 300;
     color: #fff;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+    animation: fadein 2s;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
 .jc_home-hero-video h1 strong {
     font-weight:400;
 }
@@ -326,7 +355,6 @@ body {
     top: 20px;
     z-index: 99;
     padding: 10px 0px;
-    z-index:9;
     opacity:0;
     display:none;
     -webkit-transition: opacity .4s ease-in-out;
