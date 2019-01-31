@@ -1426,7 +1426,8 @@ a.page-numbers.current {
     padding-bottom:0px;
 }
 .page-template-tpl_project-archive .jc_page-hero,
-.blog .jc_page-hero {
+.blog .jc_page-hero,
+.page-id-1470 .jc_page-hero {
     height:auto;
 }
 
