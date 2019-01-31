@@ -91,14 +91,14 @@
                 </div>
             </div>
             <div class="jc_contact-wrap-right">
-                <button class="jc_close-contact jc_contact-toggle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
-                    <style type="text/css">
-                        .off-cross{fill:#1B1E3C;}
-                    </style>
-                    <polygon class="off-cross" points="115.8,3.54 112.27,0 57.9,54.37 3.54,0 0,3.54 54.37,57.9 0,112.27 3.54,115.8 57.9,61.44 112.27,115.8 115.8,112.27 61.44,57.9 "/>
-                </svg>
-                </button>
+                <a class="jc_close-contact jc_contact-toggle">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
+                        <style type="text/css">
+                            .off-cross{fill:#1B1E3C;}
+                        </style>
+                        <polygon class="off-cross" points="115.8,3.54 112.27,0 57.9,54.37 3.54,0 0,3.54 54.37,57.9 0,112.27 3.54,115.8 57.9,61.44 112.27,115.8 115.8,112.27 61.44,57.9 "/>
+                    </svg>
+                </a>
                 <div class="jc_popup-form-wrap">
                     <?php echo do_shortcode( "[contact-form-7 id='375' title='Contact Form']" ); ?>
                 </div>
@@ -110,14 +110,14 @@
 <div class="jc_fp-video-pop-up">
     <div class="jc_fp-video-pop-up-wrap">
         <div class="jc_responsive-video"></div>
-        <button class="jc_close-video">
+        <a class="jc_close-video">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.8 118.48" style="enable-background:new 0 0 115.8 118.48;" xml:space="preserve">
                 <style type="text/css">
                     .off-cross{fill:#1B1E3C;}
                 </style>
                 <polygon class="off-cross" points="115.8,3.54 112.27,0 57.9,54.37 3.54,0 0,3.54 54.37,57.9 0,112.27 3.54,115.8 57.9,61.44 112.27,115.8 115.8,112.27 61.44,57.9 "/>
             </svg>
-        </button>
+        </a>
     </div>
 </div>
 <?php wp_footer(); ?>
