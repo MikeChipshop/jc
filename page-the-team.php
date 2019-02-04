@@ -315,7 +315,7 @@
         <?php // Section Eight // ?>
         <ul class="jc_news-archive jc_square-grid jc_team-grid">
             <?php
-                $ids8 = get_field('team_section_seven', false, false);
+                $ids8 = get_field('team_section_eight', false, false);
                 $seceightargs = array(
                     'post_type'      	=> 'team',
                     'posts_per_page'	=> -1,
@@ -357,7 +357,7 @@
         <?php // Section Nine // ?>
         <ul class="jc_news-archive jc_square-grid jc_team-grid">
             <?php
-                $ids9 = get_field('team_section_seven', false, false);
+                $ids9 = get_field('team_section_nine', false, false);
                 $secnineargs = array(
                     'post_type'      	=> 'team',
                     'posts_per_page'	=> -1,
