@@ -1421,7 +1421,8 @@ a.page-numbers.current {
 }
 .page-template-tpl_project-archive .jc_page-hero,
 .blog .jc_page-hero,
-.page-id-1470 .jc_page-hero {
+.page-id-1470 .jc_page-hero,
+.parent-pageid-88 .jc_page-hero {
     height:auto;
 }
 
@@ -1453,12 +1454,12 @@ a.page-numbers.current {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
     background-color: rgba(27,30,60,.36);
     text-transform: uppercase;
     font-size: 25px;
