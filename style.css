@@ -175,7 +175,7 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 ------------------------------------------------ */
 
 body {
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova", sans-serif;
     color:#4A4A4A;
     font-size:18px;
     font-weight:400;
