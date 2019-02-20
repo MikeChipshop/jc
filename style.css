@@ -1422,7 +1422,8 @@ a.page-numbers.current {
 .page-template-tpl_project-archive .jc_page-hero,
 .blog .jc_page-hero,
 .page-id-1470 .jc_page-hero,
-.parent-pageid-88 .jc_page-hero {
+.parent-pageid-88 .jc_page-hero,
+.page-id-88 .jc_page-hero {
     height:auto;
 }
 
