@@ -71,7 +71,7 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 /* Video */
 .jc_home-hero-video {
     position:relative;
-    background-color: #1b1e3c;
+    background-color: #fff;
 }
 .jc_home-hero-video-container {
     opacity:0;
@@ -115,7 +115,7 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
-    color: #fff;
+    color: #1b1e3c;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
     animation: fadein 2s;
 }
