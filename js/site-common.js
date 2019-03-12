@@ -57,4 +57,16 @@ jQuery(document).ready(function( $ ) {
     wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
         setTimeout(function(){ $( "body" ).removeClass("jc_contact-open"); }, 4000);
     }, false );
+
+    // Video boxes
+    $( ".jc19_video-poster" ).click(function() {
+        $( this ).fadeOut( "slow", function() {});
+    });
+
+    $( ".jc19_full-screen" ).click(function() {
+        $( "body" ).addClass("jc_video-open");
+        var $videoid = $(this).data("embed");
+        $(".jc_responsive-video").html($videoid);
+    });
+
 });

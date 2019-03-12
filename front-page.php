@@ -276,6 +276,34 @@
                 </div>
             </div>
             <div class="jc_grid-100 jc_grid-flex">
+
+
+
+
+                <?php if ( current_user_can('manage_options') ): ?>
+                <div class="cat-c jc_grid-flex-content<?php if(get_field('block_10_video')): ?> jc_video-box<?php endif; ?>" id="block-10" data-type="admin">
+                    <div class="jc19_box-video-wrap">
+                        <?php the_field("block_10_video_embed_code"); ?>
+                        <?php
+                            $attachment_id = get_field('block_10_image');
+                            $size = "1-wide";
+                            $image = wp_get_attachment_image_src( $attachment_id, $size );
+                        ?>
+                        <button class="jc19_full-screen" data-embed='<?php the_field("block_10_video_embed_code"); ?>'><i class="far fa-expand"></i></button>
+                        <div class="jc19_video-poster" style="background:url('<?php echo $image[0]; ?>') no-repeat center center;background-size:cover;">
+                            <div class="jc19_video-poster-title"><?php the_field('block_10_video_custom_title'); ?></div>
+                            <h2 class="jc_play-button"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.84001 188.06998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><polygon class="cls-1" points="0 0 0 188.07 238.84 94.04 0 0"/></svg></h2>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <?php else: ?>
                 <div class="cat-c jc_grid-flex-content<?php if(get_field('block_10_video')): ?> jc_video-box<?php endif; ?>" id="block-10">
                     <?php
                         $attachment_id = get_field('block_10_image');
@@ -299,6 +327,11 @@
                         <?php endif; ?>
                     <?php endif; ?>
                 </div>
+                <?php endif; ?>
+
+
+
+
             </div>
             <div class="jc_grid-100 jc_grid-flex">
                 <div class="cat-b jc_grid-flex-content<?php if(get_field('block_11_video')): ?> jc_video-box<?php endif; ?>" id="block-11">

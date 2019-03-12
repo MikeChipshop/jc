@@ -230,6 +230,7 @@ body {
 
 .jc_global-header {
     padding:20px 20px 14px 20px;
+    position:-webkit-sticky;
     position:sticky;
     top:0px;
     z-index: 99;
@@ -636,6 +637,94 @@ body {
     font-weight: 400;
     font-size: 20px;
 }
+
+/* Vid blocks */
+.jc19_box-video-wrap {
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(27,29,59,1);
+    position: relative;
+}
+.jc19_box-video-wrap iframe {
+    max-width: 100%;
+    -webkit-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+            transform: scale(1.08);
+}
+.jc19_video-poster {
+    position: absolute;
+    background: #f00;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor:pointer;
+}
+.jc19_video-poster svg {
+    width: 60px;
+}
+.jc19_full-screen {
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor:pointer;
+}
+.jc19_video-poster .jc_play-button {
+    position: absolute;
+    opacity:0;
+    -webkit-transition:opacity .3s ease-in-out;
+    -o-transition:opacity .3s ease-in-out;
+    transition:opacity .3s ease-in-out;
+}
+.jc19_video-poster .jc19_video-poster-title {
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    text-align: left;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    opacity:1;
+    -webkit-transition:opacity .3s ease-in-out;
+    -o-transition:opacity .3s ease-in-out;
+    transition:opacity .3s ease-in-out;
+}
+.jc19_video-poster:hover .jc19_video-poster-title {
+    opacity:0.5;
+}
+.jc19_video-poster:hover .jc_play-button {
+    opacity:1;
+}
 /* ------------------------------------------------
  Content Grid
 ------------------------------------------------ */
@@ -944,7 +1033,8 @@ body {
     cursor: pointer;
     border: none;
     -webkit-appearance: none;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     padding: 5px;
 }
 .jc_close-video svg {
@@ -1700,7 +1790,8 @@ a.page-numbers.current {
     width:auto;
     float:right;
     cursor:pointer;
-    border-radius:0px;
+    -webkit-border-radius:0px;
+            border-radius:0px;
 }
 .jc_close-contact {
     position: absolute;
