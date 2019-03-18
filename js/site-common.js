@@ -57,5 +57,4 @@ jQuery(document).ready(function( $ ) {
     wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
         setTimeout(function(){ $( "body" ).removeClass("jc_contact-open"); }, 4000);
     }, false );
-
 });

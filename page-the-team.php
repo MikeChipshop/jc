@@ -1,8 +1,19 @@
 <?php get_header(); ?>
-<div class="jc_page-hero">
-    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/team-header.jpg">
-    <div class="jc_hero-overlay"><h1>The Team</h1></div>
-</div>
+<?php if(get_field('page_hero_image')): ?>
+    <div class="jc_page-hero">
+        <?php
+            $attachment_id = get_field('page_hero_image');
+            $size = "3-wide";
+            $image = wp_get_attachment_image_src( $attachment_id, $size );
+        ?>
+        <img src="<?php echo $image[0]; ?>">
+        <div class="jc_hero-overlay"><h1><?php the_title(); ?></h1></div>
+    </div>
+<?php else: ?>
+    <div class="jc_page-hero jc_no-hero">
+        <div class="jc_hero-overlay"><h1><?php the_title(); ?></h1></div>
+    </div>
+<?php endif; ?>
 <div class="jc_wrap">
     <div class="jc_the-team">
 
@@ -304,7 +315,7 @@
         <?php // Section Eight // ?>
         <ul class="jc_news-archive jc_square-grid jc_team-grid">
             <?php
-                $ids8 = get_field('team_section_seven', false, false);
+                $ids8 = get_field('team_section_eight', false, false);
                 $seceightargs = array(
                     'post_type'      	=> 'team',
                     'posts_per_page'	=> -1,
@@ -346,7 +357,7 @@
         <?php // Section Nine // ?>
         <ul class="jc_news-archive jc_square-grid jc_team-grid">
             <?php
-                $ids9 = get_field('team_section_seven', false, false);
+                $ids9 = get_field('team_section_nine', false, false);
                 $secnineargs = array(
                     'post_type'      	=> 'team',
                     'posts_per_page'	=> -1,

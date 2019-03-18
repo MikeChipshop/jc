@@ -71,7 +71,11 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 /* Video */
 .jc_home-hero-video {
     position:relative;
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: #1b1e3c;
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
 }
 .jc_home-hero-video-container {
     opacity:0;
@@ -115,7 +119,11 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+<<<<<<< HEAD
     color: #1b1e3c;
+=======
+    color: #fff;
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
     animation: fadein 2s;
 }
@@ -123,6 +131,7 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+<<<<<<< HEAD
 }
 
 /* Firefox < 16 */
@@ -133,6 +142,18 @@ font-family: proxima-nova, sans-serif; 300 | 400 |500 | 700
     to   { opacity: 1; }
 }
 
+=======
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
 /* Internet Explorer */
 
 /* Opera < 12.1 */
@@ -230,7 +251,10 @@ body {
 
 .jc_global-header {
     padding:20px 20px 14px 20px;
+<<<<<<< HEAD
     position:-webkit-sticky;
+=======
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
     position:sticky;
     top:0px;
     z-index: 99;
@@ -637,6 +661,7 @@ body {
     font-weight: 400;
     font-size: 20px;
 }
+<<<<<<< HEAD
 
 /* Vid blocks */
 .jc19_box-video-wrap {
@@ -723,6 +748,8 @@ body {
 .jc19_video-poster:hover .jc_play-button {
     opacity:1;
 }
+=======
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
 /* ------------------------------------------------
  Content Grid
 ------------------------------------------------ */
@@ -1031,8 +1058,12 @@ body {
     cursor: pointer;
     border: none;
     -webkit-appearance: none;
+<<<<<<< HEAD
     -webkit-border-radius: 50%;
             border-radius: 50%;
+=======
+    border-radius: 50%;
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
     padding: 5px;
 }
 .jc_close-video svg {
@@ -1788,8 +1819,12 @@ a.page-numbers.current {
     width:auto;
     float:right;
     cursor:pointer;
+<<<<<<< HEAD
     -webkit-border-radius:0px;
             border-radius:0px;
+=======
+    border-radius:0px;
+>>>>>>> 837eace353f1de2b7c8ab2d0940cdf8fe0126993
 }
 .jc_close-contact {
     position: absolute;
