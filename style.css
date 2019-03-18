@@ -655,14 +655,11 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: rgba(27,29,59,1);
+    background-color: #e6e9eb;
     position: relative;
 }
 .jc19_box-video-wrap iframe {
     max-width: 100%;
-    -webkit-transform: scale(1.08);
-        -ms-transform: scale(1.08);
-            transform: scale(1.08);
 }
 .jc19_video-poster {
     position: absolute;
@@ -695,6 +692,7 @@ body {
     bottom: 10px;
     right: 10px;
     cursor:pointer;
+    display:none;
 }
 .jc19_video-poster .jc_play-button {
     position: absolute;
