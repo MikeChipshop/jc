@@ -16,10 +16,12 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'team', 600, 400, true );
 	add_image_size( 'square', 600, 600, true );
     add_image_size( 'team-divider',1880 , 9999, true );
-    add_image_size( '1-wide',640 , 9999, false );
+    add_image_size( '1-wide',1268 , 9999, false );
     add_image_size( '2-wide',1300 , 9999, false );
     add_image_size( '3-wide',1910 , 9999, false );
 }
+
+add_filter('jpeg_quality', function($arg){return 100;});
 
 /****************************************************
 ENQUEUES
