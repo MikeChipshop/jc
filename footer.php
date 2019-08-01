@@ -72,22 +72,40 @@
                 <div>
                     <?php the_field('contact_introduction','option'); ?>
                 </div>
-                <div>
-                    <div>
-                        <h2>Address</h2>
-                        <?php the_field('contact_address','option'); ?>
+                <div class="jc_contact-pop-wrap">
+                    <div class="jc_contact-pop-wrap-left">
+                        <?php if(get_field('contact_address','option')): ?>
+                            <div>
+                                <h2><?php the_field('primary_address_label','option'); ?></h2>
+                                <?php the_field('contact_address','option'); ?>
+                                <a href="<?php the_field('contact_map_link','option'); ?>" target="_blank" class="jc_map-link"><?php the_field('contact_map_link_text','option'); ?></a>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if(get_field('secondary_contact_address','option')): ?>
+                            <div>
+                                <h2><?php the_field('secondary_address_label','option'); ?></h2>
+                                <?php the_field('secondary_contact_address','option'); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if(get_field('tertiary_contact_address','option')): ?>
+                            <div>
+                                <h2><?php the_field('tertiary_address_label','option'); ?></h2>
+                                <?php the_field('tertiary_contact_address','option'); ?>
+                            </div>
+                        <?php endif; ?>
                     </div>
-                    <div>
-                        <a href="<?php the_field('contact_map_link','option'); ?>" target="_blank"><?php the_field('contact_map_link_text','option'); ?></a>
+                    <div class="jc_contact-pop-wrap-right">
+                        <div>
+                            <h2>Lets talk</h2>
+                            <a href="tel:<?php the_field('contact_telephone_number','option'); ?>"><?php the_field('contact_telephone_number','option'); ?></a>
+                        </div>
+                        <div>
+                            <h2>Enquiries</h2>
+                            <a href="mailto:<?php the_field('contact_email_address','option'); ?>"><?php the_field('contact_email_address','option'); ?></a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h2>Lets talk</h2>
-                    <a href="tel:<?php the_field('contact_telephone_number','option'); ?>"><?php the_field('contact_telephone_number','option'); ?></a>
-                </div>
-                <div>
-                    <h2>Enquiries</h2>
-                    <a href="mailto:<?php the_field('contact_email_address','option'); ?>"><?php the_field('contact_email_address','option'); ?></a>
                 </div>
             </div>
             <div class="jc_contact-wrap-right">

@@ -1682,8 +1682,12 @@ a.page-numbers.current {
 .jc_contact-wrap-left h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size:16px;
+}
+.jc_map-link {
+    display:block;
+    padding-top:5px;
 }
 .jc_contact-wrap-left > div {
     font-size:14px;
@@ -1692,19 +1696,20 @@ a.page-numbers.current {
 .jc_contact-wrap-left > div:nth-of-type(1){
     font-size:16px;
 }
-.jc_contact-wrap-left div:nth-of-type(2){
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-            -webkit-align-items: flex-end;
-            align-items: flex-end;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-            -webkit-justify-content: space-between;
-            justify-content: space-between;
+.jc_contact-pop-wrap {
+    display:flex;
+}
+.jc_contact-pop-wrap-left {
+    flex:1;
+    padding-right:10px;
+}
+.jc_contact-pop-wrap-right {
+    flex:1;
+    padding-left:10px;
+}
+.jc_contact-pop-wrap-left > div,
+.jc_contact-pop-wrap-right > div {
+    padding-bottom: 20px;
 }
 .jc_popup-form-wrap li {
     padding-bottom:50px;
